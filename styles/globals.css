@@ -40,9 +40,9 @@ header {
   justify-content: space-between;
   height: 110px;
   padding: 0 2rem;
-  background-color: rgba(1, 33, 53, 0.4);
+  background-color: rgba(1, 33, 53, 0.5);
   color: white;
-  border-radius: 25%;
+  border-radius: 30%;
 }
 
 header img{
@@ -73,6 +73,10 @@ header .nav-btn {
 }
 
 @media only screen and (max-width: 1024px) {
+  header {
+    background-color: transparent;
+  }
+
   header .nav-btn{
     visibility: visible;
     opacity: 1;

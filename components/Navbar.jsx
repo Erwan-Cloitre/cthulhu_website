@@ -13,9 +13,8 @@ const Navbar = () => {
       <img src="https://zupimages.net/up/22/34/h5za.png" alt="logo" />
       <nav ref={navRef}>
         <a href="/#">Home</a>
-        <a href="/#">Home</a>
-        <a href="/#">Home</a>
-        <a href="/#">Home</a>
+        <a href="/mint">Mint</a>
+        <a href="/stake">Staking</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes/>
         </button>
