@@ -1,6 +1,4 @@
 import { useRef } from "react";
-import Image from "next/image";
-import { img } from "/logo.png";
 import {FaBars, FaTimes} from "react-icons/fa";
 
 const Navbar = () => {
