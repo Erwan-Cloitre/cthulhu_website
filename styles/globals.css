@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
+@font-face {
+  font-family: 'arcane_nineregular';
+  src: url('../fonts/arcane_nine-webfont.woff2') format('woff2'),
+       url('../fonts/arcane_nine-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -51,6 +60,7 @@ header img{
 }
 
 nav a{
+  font-size: 1.5rem;
   margin: 0 2rem;
   color: white;
   text-decoration: none;
@@ -115,7 +125,7 @@ header .nav-btn {
 
 body {
   background-image: linear-gradient(to right top, #1b576e, #134b65, #0c3f5b, #083351, #062846, #042441, #02203b, #001c36, #001e34, #002032, #02222f, #08232c);
-  font-family: "Inter", sans-serif;
+  font-family: 'arcane_nineregular';
   color: var(--white);
   display: flex;
   margin: 0;
