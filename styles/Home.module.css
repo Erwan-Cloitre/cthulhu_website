@@ -1,3 +1,8 @@
+.backgroundCity {
+  max-width: 100%;
+  height: auto;
+}
+
 .connect {
   position: fixed;
   top: 5%;
@@ -34,13 +39,11 @@
 }
 
 .container {
-  margin-top: 96px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  padding: 0 24px;
+  width: 100%;
 }
 
 .page {

@@ -4,6 +4,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -30,8 +32,85 @@ select {
   --tw-color1-hover: #9333ea;
 }
 
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+  padding: 0 2rem;
+  background-color: rgba(1, 33, 53, 0.4);
+  color: white;
+  border-radius: 25%;
+}
+
+header img{
+  width: 100px;
+  height: 100px;
+}
+
+nav a{
+  margin: 0 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: yellow;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #001c36;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav{
+    transform: none;
+  }
+
+  nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a{
+    font-size: 1.5rem;
+  }
+}
+
 body {
-  background: var(--black);
+  background-image: linear-gradient(to right top, #1b576e, #134b65, #0c3f5b, #083351, #062846, #042441, #02203b, #001c36, #001e34, #002032, #02222f, #08232c);
   font-family: "Inter", sans-serif;
   color: var(--white);
   display: flex;

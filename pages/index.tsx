@@ -8,15 +8,17 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
+      <div><img className={styles.backgroundCity} src={`/bg-yellow.png`} alt="drop" /></div>
+        
       <h1 className={styles.h1}>thirdweb Deploy - Custom Staking Contract</h1>
 
-      <div
-        className={styles.nftBoxGrid}
+      <div className={styles.nftBoxGrid}>
+        {/* Mint a new NFT */}
+        <div 
+        className={styles.optionSelectBox}
         role="button"
         onClick={() => router.push(`/mint`)}
-      >
-        {/* Mint a new NFT */}
-        <div className={styles.optionSelectBox}>
+        >
           <img src={`/icons/drop.webp`} alt="drop" />
           <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
           <p className={styles.selectBoxDescription}>

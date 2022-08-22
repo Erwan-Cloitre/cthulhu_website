@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import type { AppProps } from "next/app";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
@@ -8,6 +9,7 @@ const activeChainId = ChainId.Mumbai;
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider desiredChainId={activeChainId}>
+      <Navbar />
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
