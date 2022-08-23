@@ -82,6 +82,18 @@ header .nav-btn {
   font-size: 1.8rem;
 }
 
+.loginButton{
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  position: absolute;
+}
+
 @media only screen and (max-width: 1024px) {
   header {
     background-color: transparent;
@@ -120,6 +132,11 @@ header .nav-btn {
 
   nav a{
     font-size: 1.5rem;
+  }
+  .loginButton{
+    top: 0;
+    right: 0;
+    position: relative;
   }
 }
 
