@@ -1,6 +1,7 @@
 import { useAddress } from "@thirdweb-dev/react";
 import { useRef } from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
+import Link from 'next/link'
 import LoginButton from "../components/LoginButton";
 import ViewAddress from "../components/ViewAddress";
 
@@ -24,9 +25,15 @@ const Navbar = () => {
     <header>
       <img src="https://zupimages.net/up/22/34/h5za.png" alt="logo" />
       <nav ref={navRef}>
-        <a href="/#">Home</a>
-        <a href="/mint">Mint</a>
-        <a href="/stake">Staking</a>
+      <Link href="/">
+        <a>Home</a>
+      </Link>
+      <Link href="/mint">
+        <a>Mint</a>
+      </Link>
+      <Link href="/stake">
+        <a>Staking</a>
+      </Link>
         {loginButton}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes/>

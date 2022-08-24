@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       <div><img className={styles.backgroundCity} src={`/bg-yellow.png`} alt="drop" /></div>
       <h1 className={styles.h1}>Eternal Cthulhu</h1>
 
+      <div><img className={styles.reefLeft} src={`/reef-left.webp`} alt="drop" /></div>
       <div className={styles.nftBoxGrid}>
         {/* Mint a new NFT */}
         <div 
