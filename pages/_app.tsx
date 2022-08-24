@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
-import Bubble from "../components/Bubble";
 import type { AppProps } from "next/app";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 // This is the chainId your dApp will work on.
 const activeChainId = ChainId.Mumbai;
@@ -10,8 +10,9 @@ const activeChainId = ChainId.Mumbai;
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider desiredChainId={activeChainId}>
-      <Navbar />
+       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </ThirdwebProvider>
   );
 }

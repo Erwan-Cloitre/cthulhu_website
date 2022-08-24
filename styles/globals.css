@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  padding-bottom: 250px;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -93,6 +92,16 @@ header .nav-btn {
   position: absolute;
 }
 
+.footer-container {
+padding-top: 100px;
+}
+
+.footer-bg {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
 @media only screen and (max-width: 1024px) {
   header {
     background-color: transparent;
@@ -121,6 +130,7 @@ header .nav-btn {
 
   header .responsive_nav{
     transform: none;
+    z-index: 2;
   }
 
   nav .nav-close-btn{
@@ -140,7 +150,7 @@ header .nav-btn {
 }
 
 body {
-  background: linear-gradient(to right top, #1b576e, #134b65, #0c3f5b, #083351, #062846, #042441, #02203b, #001c36, #001e34, #002032, #02222f, #08232c) fixed;
+  background: linear-gradient(to right top, #016086, #005781, #044d7b, #0e4474, #163a6c) fixed;
   font-family: 'arcane_nineregular';
   color: var(--white);
   display: flex;
@@ -163,16 +173,16 @@ h2 {
 .bubble{
   position: absolute;
   bottom:-100px;
-  width:40px;
-  height: 40px;
+  width: 2.08vw;
+  height: 2.08vw;
   background:#f1f1f1;
   border-radius:50%;
   opacity:0.5;
   animation: rise 10s infinite ease-in;
 }
 .bubble:nth-child(1){
-  width:40px;
-  height:40px;
+  width:2.08vw;
+  height:2.08vw;
   left:10%;
   animation-duration:8s;
 }
@@ -191,8 +201,8 @@ h2 {
   animation-delay:2s;
 }
 .bubble:nth-child(4){
-  width:80px;
-  height:80px;
+  width: 4.16vw;
+  height: 4.16vw;
   left:50%;
   animation-duration:11s;
   animation-delay:0s;
@@ -212,8 +222,8 @@ h2 {
   animation-delay:3s;
 }
 .bubble:nth-child(7){
-  width:90px;
-  height:90px;
+  width:4.6vw;
+  height:4.6vw;
   left:70%;
   animation-duration:12s;
   animation-delay:2s;
@@ -233,8 +243,8 @@ h2 {
   animation-delay:1s;
 }
 .bubble:nth-child(10){
-  width:90px;
-  height:90px;
+  width:4.6vw;
+  height:4.6vw;
   left:25%;
   animation-duration:10s;
   animation-delay:4s;
