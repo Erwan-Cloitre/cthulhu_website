@@ -1,15 +1,16 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
+import Bubble from "../components/Bubble";
 
 const Home: NextPage = () => {
   const router = useRouter();
 
   return (
     <div className={styles.container}>
+     
       {/* Top Section */}
       <div><img className={styles.backgroundCity} src={`/bg-yellow.png`} alt="drop" /></div>
-        
       <h1 className={styles.h1}>Eternal Cthulhu</h1>
 
       <div className={styles.nftBoxGrid}>
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
+      <Bubble />
     </div>
   );
 };
