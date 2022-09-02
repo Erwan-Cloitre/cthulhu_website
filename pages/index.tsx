@@ -11,34 +11,22 @@ const Home: NextPage = () => {
      
       {/* Top Section */}
       <div><img className={styles.backgroundCity} src={`/bg-yellow.png`} alt="drop" /></div>
-      <h1 className={styles.h1}>Eternal Cthulhu</h1>
 
       <div><img className={styles.reefLeft} src={`/reef-left.webp`} alt="drop" /></div>
       <div className={styles.nftBoxGrid}>
         {/* Mint a new NFT */}
-        <div 
-        className={styles.optionSelectBox}
+        <button 
+        className={styles.newButton}
         role="button"
         onClick={() => router.push(`/mint`)}
         >
-          <img src={`/icons/drop.webp`} alt="drop" />
-          <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
-          <p className={styles.selectBoxDescription}>
-            Use the NFT Drop Contract to claim an NFT from the collection.
-          </p>
-        </div>
+          <span>
+            MINT NOW
+          </span>
+        </button>
 
-        <div
-          className={styles.optionSelectBox}
-          role="button"
-          onClick={() => router.push(`/stake`)}
-        >
-          <img src={`/icons/token.webp`} alt="drop" />
-          <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
-          <p className={styles.selectBoxDescription}>
-            Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
-            to stake your NFTs, and earn tokens from the <b>Token</b> contract.
-          </p>
+        <div>
+          <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="hiddenCthulhu" />
         </div>
       </div>
       <Bubble />

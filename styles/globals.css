@@ -47,7 +47,6 @@ header {
   padding: 0 2rem;
   background-color: rgba(1, 33, 53, 0.5);
   color: white;
-  border-radius: 30%;
 }
 
 header img{
@@ -151,7 +150,6 @@ body {
   background: linear-gradient(to right top, #016086, #005781, #044d7b, #0e4474, #163a6c) fixed;
   font-family: 'arcane_nineregular';
   color: var(--white);
-  display: flex;
   margin: 0;
   text-align: center;
 }
@@ -162,8 +160,8 @@ h2 {
 
 .bubbles{
   position: absolute;
-  width:100%;
-  height: 100%;
+  width: 100%;
+  height: 2000px;
   z-index:0;
   overflow:hidden;
   top: 51vw;
@@ -256,7 +254,7 @@ h2 {
     transform:translate(100px);
   }
   100%{
-    bottom:1080px;
+    bottom:2000px;
     transform:translateX(-200px);
   }
 }

@@ -3,12 +3,73 @@
   height: auto;
 }
 
+.logo{
+  width: 200px;
+}
+
 .reefLeft{
   position: absolute;
   left: 0;
   top: 1;
   max-width: 154px;
   width: 10.7vw
+}
+
+.newButton{
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+  border-radius: 1000px;
+  border: 2px solid black;
+  width: 20vw;
+  position: relative;
+  background: #fcd230;
+  overflow: hidden;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.newButton::before{
+  width: 10px;
+  right: 35%;
+  content: " ";
+  height: 120px;
+  display: block;
+  top: -30px;
+  opacity: 0.3;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(30deg);
+  transition: all .2s;
+}
+
+.newButton::after{
+  width: 40px;
+  right: 15%;
+  content: " ";
+  height: 120px;
+  background: #fff;
+  display: block;
+  top: -30px;
+  opacity: .3;
+  position: absolute;
+  transform: rotate(30deg);
+  transition: all .2s;
+  z-index: -1;
+}
+
+.newButton:hover{
+  background: #e84048;
+  transform: scale(1.2);
+}
+
+.newButton:hover::before{
+  transform: translateX(50px) rotate(30deg);
+}
+
+.newButton:hover::after{
+  transform: translateX(50px) rotate(30deg);
 }
 
 .connect {
@@ -59,6 +120,12 @@
   border-radius: 20px;
   border: 1px solid var(--tw-color1);
   padding: 16px;
+}
+
+.hiddenCthulhu{
+  width: 26vw;
+  height: 26vw;
+  border-radius: 0.5rem;
 }
 
 .pageContainer {
@@ -285,10 +352,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2%;
+  gap: 10%;
   margin-top: 28px;
   flex-wrap: wrap;
   z-index: 1;
+  padding-bottom: 200px;
 }
 
 .nftBox {
