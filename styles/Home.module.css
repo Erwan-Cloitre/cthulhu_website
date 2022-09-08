@@ -15,13 +15,31 @@
   width: 10.7vw
 }
 
+.reefRight{
+  position: absolute;
+  right: 0;
+  top: 1;
+  max-width: 154px;
+  width: 10.7vw
+}
+
+.buttonBox{
+  max-width: 26vw;
+}
+
+.buttonBox h1{
+  font-size: 3.5vw;
+}
+
 .newButton{
+  margin-top: 50px;
   font-size: 36px;
   font-weight: 600;
   color: black;
   border-radius: 1000px;
   border: 2px solid black;
   width: 20vw;
+  min-width: 150px;
   position: relative;
   background: #fcd230;
   overflow: hidden;
@@ -346,17 +364,17 @@
 }
 
 .nftBoxGrid {
-  width: 1200px;
+  width: 100%;
   max-width: 95vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 15%;
   margin-top: 28px;
   flex-wrap: wrap;
   z-index: 1;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .nftBox {
@@ -548,4 +566,233 @@
 
 .noGapBottom {
   margin-bottom: 0px;
+}
+
+.timelineSection{
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timelineItems{
+	max-width: 90vw;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timelineItems::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timelineItem{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timelineItem:last-child{
+	margin-bottom: 0;
+}
+.timelineItem:nth-child(odd){
+  padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timelineItem:nth-child(even){
+    padding-left: calc(50% + 30px);
+    text-align: left;
+}
+.timelineDot{
+	height: 16px;
+	width: 16px;
+	background-color: #fcd230;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:1rem;
+}
+.timelineDate{
+	font-size: 2rem;
+	color: #fcd230;
+	margin:0 0 15px;
+}
+.timelineContent{
+	padding: 30px;
+}
+.timelineContent h3{
+  font-size: 3rem;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+  line-height: 2.5rem;
+}
+.timelineContent p{
+    color: #c8c8c8;
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2rem;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timelineItems::before{
+		left: 7px;
+	}
+	.timelineItem:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timelineItem:nth-child(odd),
+	.timelineItem:nth-child(even){
+		padding-left: 37px;
+	}
+	.timelineDot{
+		left:0;
+	}
+}
+
+/* START TEAM CSS CARD */
+
+.sectionTeam{
+  position: relative;
+}
+
+.containerTeam{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.containerTeam .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.containerTeam .card .content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.containerTeam .card:hover .content{
+  opacity: 1;
+}
+
+.containerTeam .card .content .imgBox{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.containerTeam .card .content .imgBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerTeam .card .content .contentBox{
+  padding-bottom: 75px;
+}
+
+.containerTeam .card .content .contentBox h3{
+  color: #fcd230;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 0.7em;
+}
+
+.containerTeam .card .content .contentBox span{
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.containerTeam .card .sci{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+}
+
+.containerTeam .card .sci li{
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+.firstIcon {
+  transition: 0.5s;
+  transition-delay: calc(0.1s * 1);
+}
+
+.secondIcon {
+  transition: 0.5s;
+  transition-delay: calc(0.1s * 2);
+}
+
+.thirdIcon {
+  transition: 0.5s;
+  transition-delay: calc(0.1s * 3);
+}
+
+.containerTeam .card:hover .sci li{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.containerTeam .card .sci li a{
+  color: white;
+}  
+  
+.containerTeam .card .sci li a img{
+  width: 50px;
+  height: 50px;
+}  
+
+/* END TEAM CSS CARD */
+
+.collabBox{
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+}
+
+.collabIcon{
+  min-width: 25%;
+  padding: 20px;
+}
+
+.collabIcon img{
+  justify-items: center;
+  max-height: 75px;
+  max-width: 250px;
 }

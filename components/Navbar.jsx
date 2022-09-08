@@ -23,8 +23,10 @@ const Navbar = () => {
 
   return (
     <header>
-      <img src="https://zupimages.net/up/22/34/h5za.png" alt="logo" />
+      <div className="HeaderBox">
+      <img className="NavbarLogo" src="https://zupimages.net/up/22/34/h5za.png" alt="logo" />
       <nav ref={navRef}>
+      <div className="NavbarLinkBox">
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -34,14 +36,37 @@ const Navbar = () => {
       <Link href="/stake">
         <a>Staking</a>
       </Link>
-        {loginButton}
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+      </div>
+      <div className="HiddenIconsBox">
+      <Link href="/">
+        <a><img className="NavbarIcons" src={`/icons/discord.png`}/></a>
+      </Link>
+      <Link href="/">
+        <a><img className="NavbarIcons" src={`/icons/opensea.png`}/></a>
+      </Link>
+      <Link href="/">
+        <a><img className="NavbarIcons" src={`/icons/social.png`}/></a>
+      </Link>
+      </div>
+      <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes/>
-        </button>
+      </button>
       </nav>
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars/>
       </button>
+      <div className="NavbarIconsBox">
+      <Link href="/">
+        <a><img className="NavbarIcons" src={`/icons/discord.png`}/></a>
+      </Link>
+      <Link href="/">
+        <a><img className="NavbarIcons" src={`/icons/opensea.png`}/></a>
+      </Link>
+      <Link href="/">
+        <a><img className="NavbarIcons" src={`/icons/social.png`}/></a>
+      </Link>
+      </div>
+      </div>
     </header>
   );
 };
