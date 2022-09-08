@@ -1,50 +1,33 @@
-import { useState } from "react";
 const Faq = () => {
-
-  const [selected, setSelected] = useState(null)
-
-  const toggle = (i) => {
-    if (selected == i){
-        return setSelected(null)
-    }
-
-    setSelected(i)
-  }
-
-  const data = [
-    {
-      question:'Question 1',
-      answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-    },
-    {
-      question:'Question 2',
-      answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-    },
-    {
-      question:'Question 3',
-      answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-    },
-    {
-      question:'Question 4',
-      answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-    }
-  ]
 
   return (
     <div className="wrapper">
-      <div className="accordion">
-        
-          {data.map((item, i) => (
-            <div className="item">
-              <div className="title" onClick={() => toggle(i)}>
-                <h2>{item.question}</h2>
-                <span>{selected == i ? '-' : '+'}</span>
+      <ul id="accordion">
+          <li>
+              <label for="first">Ma premiere question ? <span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="first"></input>
+              <div className="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
-              <div className={selected == i ? 'content show' : 'content'}>{item.answer}</div>
-            </div>
-          ))}
-
-      </div>
+          </li>
+          <li>
+              <label for="second">Ma premiere question ? <span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="second"></input>
+              <div className="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+          </li>
+          <li>
+              <label for="third">Ma premiere question ? <span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="third"></input>
+              <div className="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+          </li>
+      </ul>
     </div>
   );
 };

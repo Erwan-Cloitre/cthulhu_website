@@ -311,7 +311,6 @@ h2 {
 /* START FAQ */
 
 .wrapper{
-  padding-top: 5vw;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -319,44 +318,54 @@ h2 {
   z-index: 1;
 }
 
-.accordion{
-  align-items: center;
-  justify-content: center;
-  width: 75%;
+#accordion{
+  margin: 100px auto;
+  width: 80%;
 }
-
-.item{
+ 
+#accordion li{
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 15px;
+  padding: 10px;
   margin-bottom: 15px;
-  padding: 10px 20px;
+  text-align: left;
 }
 
-.title{
-  color: #fcd230;
+#accordion li label{
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-  height: 100px;
-}
-
-.title span{
- font-size: 4rem;
-}
-
-.content{
+  justify-content: space-between;
+  
   font-size: 2rem;
+  cursor: pointer;
+  color: #fcd230;
+}
+
+#accordion li label span{
+  transform: rotate(90deg);
+  font-size: 4rem;
+}
+
+#accordion label + input[type="radio"]{
+  display: none;
+}
+
+#accordion .answer{
+  margin: 0 10px 10px;
+  line-height: 26px;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.5s cubic-bezier(0,1,0,1);
+  transition: max-height 700ms;
+  font-size: 1.5rem;
 }
 
-.content.show{
-  height: auto;
-  max-height: 9999px;
-  transition: all 0.5s cubic-bezier(1,0,1,0);
+#accordion label + input[type="radio"]:checked + .answer{
+  max-height: 900px;
 }
 
 /* END FAQ */

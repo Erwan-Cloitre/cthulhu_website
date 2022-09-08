@@ -221,7 +221,7 @@ const Home: NextPage = () => {
       {/* END COLLAB SECTION */}
 <h1>FREQUENTLY ASKED QUESTIONS</h1>
       <Faq />
-      
+      <Bubble />
     </div>
   );
 };
