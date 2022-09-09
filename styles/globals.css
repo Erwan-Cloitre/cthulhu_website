@@ -20,10 +20,16 @@
 
 /* Set core body defaults */
 body {
+  min-width: 350px;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   display: flex;
+  background: linear-gradient(to right top, #016086, #005781, #044d7b, #0e4474, #163a6c) fixed;
+  font-family: 'arcane_nineregular';
+  color: var(--white);
+  margin: 0;
+  text-align: center;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -175,16 +181,12 @@ padding-top: 100px;
   }
 }
 
-body {
-  background: linear-gradient(to right top, #016086, #005781, #044d7b, #0e4474, #163a6c) fixed;
-  font-family: 'arcane_nineregular';
-  color: var(--white);
-  margin: 0;
-  text-align: center;
-}
-
 h2 {
   font-size: 2rem;
+}
+
+.bubblesRes{
+  display: none;
 }
 
 .bubbles{
@@ -193,7 +195,6 @@ h2 {
   max-width: 100%;
   z-index:0;
   top: 65vw; 
- 
 }
 .bubble{
   position: absolute;
@@ -273,27 +274,6 @@ h2 {
   animation-duration:35s;
   animation-delay:4s;
 }
-.bubble:nth-child(11){
-  width:35px;
-  height:35px;
-  left:70%;
-  animation-duration:35s;
-  animation-delay:6s;
-}
-.bubble:nth-child(12){
-  width:50px;
-  height:50px;
-  left:80%;
-  animation-duration:35s;
-  animation-delay:7s;
-}
-.bubble:nth-child(13){
-  width:45px;
-  height:45px;
-  left:65%;
-  animation-duration:35s;
-  animation-delay:8s;
-}
 @keyframes rise{
   0%{
     bottom:0;
@@ -306,6 +286,80 @@ h2 {
     bottom:292vw;
     transform:translateX(-65vw);
   }
+}
+
+@keyframes riseResponsive{
+  0%{
+    bottom:0;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translateX(20px);
+  }
+  90%{
+    transform:translateX(0);
+  }
+  100%{
+    bottom:1200vw;
+    transform:translateX(-100vw);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bubbles{
+    display: none;
+  }
+    .bubblesRes{
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      z-index:0;
+      top: 65vw; 
+    }
+    .bubbleRes{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background:#f1f1f1;
+      border-radius:50%;
+      opacity:0.5;
+      animation: riseResponsive 25s infinite ease-in;
+    }
+    .bubbleRes:nth-child(1){
+      width: 25px;
+      height: 25px;
+      left:10%;
+      animation-duration:28s;
+    }
+    .bubbleRes:nth-child(2){
+      width:20px;
+      height:20px;
+      left:20%;
+      animation-duration:35s;
+      animation-delay:1s;
+    }
+    .bubbleRes:nth-child(3){
+      width:35px;
+      height:35px;
+      left:35%;
+      animation-duration:38s;
+      animation-delay:2s;
+    }
+    .bubbleRes:nth-child(4){
+      width: 50px;
+      height: 50px;
+      left:50%;
+      animation-duration:39s;
+      animation-delay:1s;
+    }
+    .bubbleRes:nth-child(5){
+      width:35px;
+      height:35px;
+      left:55%;
+      animation-duration: 25s;
+      animation-delay:1s;
+    }
 }
 
 /* START FAQ */

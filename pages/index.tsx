@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import Bubble from "../components/Bubble";
+import BubbleRes from "../components/BubbleRes";
 import Faq from "../components/faq";
 
 const Home: NextPage = () => {
@@ -222,6 +223,7 @@ const Home: NextPage = () => {
 <h1>FREQUENTLY ASKED QUESTIONS</h1>
       <Faq />
       <Bubble />
+      <BubbleRes />
     </div>
   );
 };
