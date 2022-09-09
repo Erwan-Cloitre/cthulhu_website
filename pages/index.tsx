@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 
       <div><img className={styles.reefLeft} src={`/waterAssets/reef-left.png`} alt="drop" /></div>
       <div><img className={styles.reefRight} src={`/waterAssets/reef-right.png`} alt="drop" /></div>
-      <div className={styles.nftBoxGrid}>
+      <section className={styles.nftBoxGrid}>
         <div className={styles.buttonBox}>
           <h1>ETERNAL CTHULHU</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
@@ -34,8 +34,8 @@ const Home: NextPage = () => {
           <div>
             <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="hiddenCthulhu" />
           </div>
-        </div>
-        <h1>ROADMAP</h1>
+        </section>
+        <h1 className={styles.titlesHome}>ROADMAP</h1>
         <div><img className={styles.fishRight} src={`/waterAssets/fish2.png`} alt="drop" /></div>
         <div className={styles.waves}></div>
         <section className={styles.timelineSection}>
@@ -91,7 +91,7 @@ const Home: NextPage = () => {
 	</div>
 </section>
 {/* TEAM SECTION */}
-<h1>MEET THE TEAM</h1>
+<h1 className={styles.titlesHome}>MEET THE TEAM</h1>
 <section className={styles.sectionTeam}>
   <div className={styles.containerTeam}>
     {/* FIRST MEMBER */}
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
 </section>
 {/* END TEAM SECTION */}
 {/* START ARTISTS COLLAB SECTION */}
-<h1>ARTISTS COLLABORATIONS</h1>
+<h1 className={styles.titlesHome}>ARTISTS COLLABORATIONS</h1>
 <div className={styles.waves2}></div>
 <section className={styles.sectionTeam}>
   <div className={styles.containerTeam}>
@@ -229,7 +229,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       {/* END COLLAB SECTION */}
-<h1>FREQUENTLY ASKED QUESTIONS</h1>
+      <h1 className={styles.titlesHome}>FREQUENTLY ASKED QUESTIONS</h1>
       <Faq />
       <Bubble />
       <BubbleRes />

@@ -59,10 +59,6 @@
   max-width: 26vw;
 }
 
-.buttonBox h1{
-  font-size: 3.5vw;
-}
-
 .newButton{
   margin-top: 50px;
   font-size: 36px;
@@ -169,12 +165,6 @@
   border-radius: 20px;
   border: 1px solid var(--tw-color1);
   padding: 16px;
-}
-
-.hiddenCthulhu{
-  width: 26vw;
-  height: 26vw;
-  border-radius: 0.5rem;
 }
 
 .pageContainer {
@@ -384,16 +374,44 @@
   }
 }
 
-@media screen and (max-width: 699px) {
-  .contractBoxGrid {
-    gap: 2%;
+@media only screen and (max-width: 699px) {
+  .nftBoxGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
   }
 
-  .contractBox {
-    width: 98%;
+  .buttonBox{
+    width: 100%;
+    min-width: 250px;
+  }
+  
+  .buttonBox h1{
+    font-size: 2.5rem;
+  }
+
+  .buttonBox p{
+    font-size: 1.3rem;
+  }
+
+  .hiddenCthulhu{
+    width: 200px;
+    border-radius: 0.5rem;
+  }
+
+  .newButton{
+    margin: 20px 0;
+    width: 200px;
+  }
+
+  .titlesHome{
+    font-size: 3em;
+    padding: 10px;
   }
 }
 
+@media only screen and (min-width: 700px) {
 .nftBoxGrid {
   width: 100%;
   max-width: 95vw;
@@ -406,6 +424,17 @@
   flex-wrap: wrap;
   z-index: 1;
   padding-bottom: 100px;
+}
+
+.buttonBox h1{
+  font-size: 3.5vw;
+}
+
+.hiddenCthulhu{
+  width: 26vw;
+  height: 26vw;
+  border-radius: 0.5rem;
+}
 }
 
 .nftBox {
@@ -439,30 +468,6 @@
 .selectBoxDescription {
   color: rgba(255, 255, 255, 0.9);
   margin-top: 0px;
-}
-
-/* Between 1200 and 800 */
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
-  .nftBox {
-    width: 49%;
-    margin-top: 16px;
-  }
-}
-
-/* beneath 800
-*/
-@media only screen and (max-width: 800px) {
-  .nftBoxGrid {
-    justify-content: center;
-  }
-  .nftBox {
-    width: 90%;
-    margin-top: 16px;
-  }
-  .optionSelectBox {
-    width: 90%;
-    margin-top: 16px;
-  }
 }
 
 .tokenGrid {
