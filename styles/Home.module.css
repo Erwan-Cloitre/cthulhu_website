@@ -426,8 +426,9 @@
   }
 
   .titlesHome{
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 10px;
+    width: 100%;
   }
 }
 
