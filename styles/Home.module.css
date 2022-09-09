@@ -31,7 +31,7 @@
 }
 
 .waves{
-  background-image: url(/waves.png);
+  background-image: url(./../public/waves.png);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -44,7 +44,7 @@
 }
 
 .waves2{
-  background-image: url(/waves.png);
+  background-image: url(./../public/waves.png);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -151,15 +151,32 @@
   font-size: 1.5rem;
   margin-bottom: 16px;
 }
+/*Mint Page*/
+@media only screen and (max-width: 699px) {
+  .containerMint {
+    padding-top: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  .containerMint p{
+    width: 80%;
+  }
 }
-
+@media only screen and (min-width: 700px) {
+  .containerMint {
+    padding-top: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+/*End Mint Page*/
 .page {
   width: inherit;
   border-radius: 20px;
@@ -389,9 +406,11 @@
   
   .buttonBox h1{
     font-size: 2.5rem;
+    line-height: 1;
   }
 
   .buttonBox p{
+    padding: 10px;
     font-size: 1.3rem;
   }
 
@@ -403,10 +422,11 @@
   .newButton{
     margin: 20px 0;
     width: 200px;
+    z-index: 1;
   }
 
   .titlesHome{
-    font-size: 3em;
+    font-size: 4rem;
     padding: 10px;
   }
 }
@@ -434,6 +454,10 @@
   width: 26vw;
   height: 26vw;
   border-radius: 0.5rem;
+}
+.titlesHome{
+  font-size: 5rem;
+  padding: 10px;
 }
 }
 
@@ -606,7 +630,7 @@
 
 .timelineSection{
 	min-height: 100vh;
-	padding: 100px 15px;
+	padding: 50px 15px;
 }
 .timelineItems{
 	max-width: 90vw;

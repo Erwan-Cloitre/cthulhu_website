@@ -4,12 +4,13 @@ import styles from "../styles/Home.module.css";
 import Bubble from "../components/Bubble";
 import BubbleRes from "../components/BubbleRes";
 import Faq from "../components/faq";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   const router = useRouter();
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerHome}>
      
       {/* Top Section */}
       <div><img className={styles.backgroundCity} src={`/bg-yellow.png`} alt="drop" /></div>
@@ -233,6 +234,7 @@ const Home: NextPage = () => {
       <Faq />
       <Bubble />
       <BubbleRes />
+      <Footer />
     </div>
   );
 };

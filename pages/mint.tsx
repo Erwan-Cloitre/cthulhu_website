@@ -1,15 +1,13 @@
-import { useAddress, useMetamask, useNFTDrop } from "@thirdweb-dev/react";
+import { ConnectWallet, useAddress, useNFTDrop } from "@thirdweb-dev/react";
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
+import FooterMint from "../components/FooterMint";
 
 const Mint: NextPage = () => {
   const router = useRouter();
   // Get the currently connected wallet's address
   const address = useAddress();
-
-  // Function to connect to the user's Metamask wallet
-  const connectWithMetamask = useMetamask();
 
   // Get the NFT Collection contract
   const nftDropContract = useNFTDrop(
@@ -29,7 +27,7 @@ const Mint: NextPage = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerMint}>
       <h1 className={styles.h1}>Mint An NFT!</h1>
 
       <p className={styles.explain}>
@@ -39,12 +37,10 @@ const Mint: NextPage = () => {
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
       {!address ? (
-        <button
-          className={`${styles.mainButton} ${styles.spacerBottom}`}
-          onClick={connectWithMetamask}
-        >
-          Connect Wallet
-        </button>
+        <ConnectWallet
+          colorMode="dark"
+          accentColor="#fcd230"
+        />
       ) : (
         <button
           className={`${styles.mainButton} ${styles.spacerBottom}`}
@@ -53,6 +49,7 @@ const Mint: NextPage = () => {
           Claim An NFT
         </button>
       )}
+      <FooterMint />
     </div>
   );
 };

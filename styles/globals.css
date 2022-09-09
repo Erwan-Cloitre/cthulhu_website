@@ -24,7 +24,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  display: flex;
   background: linear-gradient(to right top, #016086, #005781, #044d7b, #0e4474, #163a6c) fixed;
   font-family: 'arcane_nineregular';
   color: var(--white);
@@ -118,16 +117,26 @@ header .nav-btn {
   padding-left: 135px;
 }
 
-.footer-container {
+.footerHomeContainer {
 padding-top: 100px;
+bottom: 0;
 }
 
-.footer-bg {
-  position: relative;
+.footerHomebg {
   width: 100%;
   height: 100%;
   float: left;
 }
+
+.footerMintContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  bottom: 0;
+  z-index: -1;
+  right: 0;
+  }
 
 @media only screen and (max-width: 1024px) {
   header {
@@ -143,9 +152,8 @@ padding-top: 100px;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    background-color: #001c36;
+    background-color: rgba(0, 28, 54, 1);
     transition: 0.5s;
     transform: translateY(-100vh);
   }
@@ -433,12 +441,16 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
   font-size: 2rem;
   cursor: pointer;
   color: #fcd230;
 }
-
+@media only screen and (max-width: 699px) {
+  #accordion li label{
+    font-size: 1.7rem;
+    padding: 0;
+  }
+}
 #accordion li label span{
   transform: rotate(90deg);
   font-size: 4rem;
@@ -462,3 +474,4 @@ h2 {
 }
 
 /* END FAQ */
+
