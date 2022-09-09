@@ -12,6 +12,8 @@ import { BigNumber, ethers } from "ethers";
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
+import FooterStake from "../components/FooterStake";
+
 
 const nftDropContractAddress = "0xC59ef2a25324BdF61CCDAb2B9A104A9bf9e33DEb";
 const tokenContractAddress = "0xd9d06dFD7A7bBeFf7d249c6381620650b2E57ec4";
@@ -107,7 +109,7 @@ const Stake: NextPage = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerMint}>
       <h1 className={styles.h1}>Stake Your NFTs</h1>
 
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
@@ -191,6 +193,7 @@ const Stake: NextPage = () => {
           </div>
         </>
       )}
+      <FooterStake />
     </div>
   );
 };

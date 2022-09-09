@@ -71,7 +71,7 @@
   position: relative;
   background: #fcd230;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -499,6 +499,30 @@
   margin-top: 0px;
 }
 
+/* Between 1200 and 800 */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .nftBox {
+    width: 49%;
+    margin-top: 16px;
+  }
+}
+
+/* beneath 800
+*/
+@media only screen and (max-width: 800px) {
+  .nftBoxGrid {
+    justify-content: center;
+  }
+  .nftBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+  .optionSelectBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+}
+
 .tokenGrid {
   display: flex;
   flex-direction: row;
@@ -860,4 +884,16 @@
   justify-items: center;
   max-height: 75px;
   max-width: 250px;
+}
+
+.containerStake{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./../public/footer.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
