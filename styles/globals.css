@@ -116,28 +116,75 @@ header .nav-btn {
 .NavbarLinkBox{
   padding-left: 135px;
 }
+/*Footer mint CSS*/
 
-.footerHomeContainer {
-padding-top: 100px;
-bottom: 0;
+@media only screen and (max-width: 699px) {
+  .footerMintContainer {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    padding-top: 100px;
+    bottom: 0;
+    z-index: -1;
+    right: 0;
+    }
+
+    .footerHomeContainer {
+      padding-top: 100px;
+      bottom: 0;
+    }
+      
+    .footerHomebg {
+      width: 100%;
+      height: 100%;
+      float: left;
+    }
 }
+@media only screen and (min-width: 700px) and (max-width: 1024px){
+  .footerMintContainer {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    padding-top: 100px;
+    bottom: 0;
+    z-index: -1;
+    right: 0;
+    }
 
-.footerHomebg {
-  width: 100%;
-  height: 100%;
-  float: left;
+    .footerHomeContainer {
+      padding-top: 100px;
+      bottom: 0;
+    }
+      
+    .footerHomebg {
+      width: 100%;
+      height: 100%;
+      float: left;
+    }
 }
+@media only screen and (min-width: 1025px) {
+  .footerMintContainer {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    padding-top: 100px;
+    bottom: 0;
+    z-index: -1;
+    right: 0;
+    }
 
-.footerMintContainer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  bottom: 0;
-  z-index: -1;
-  right: 0;
-  }
-
+    .footerHomeContainer {
+      padding-top: 100px;
+      bottom: 0;
+    }
+      
+    .footerHomebg {
+      width: 100%;
+      height: 100%;
+      float: left;
+    }
+}
+/*Footer CSS*/
 @media only screen and (max-width: 1024px) {
   header {
     background-color: transparent;

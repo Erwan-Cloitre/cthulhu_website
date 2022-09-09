@@ -175,6 +175,10 @@
     justify-content: center;
     width: 100%;
   }
+
+  .containerMint p{
+    width: 80%;
+  }
 }
 /*End Mint Page*/
 .page {
