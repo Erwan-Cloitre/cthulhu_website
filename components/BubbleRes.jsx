@@ -7,6 +7,11 @@ const BubbleRes = () => {
         <div className="bubbleRes"></div>
         <div className="bubbleRes"></div>
         <div className="bubbleRes"></div>  
+        <div className="bubbleRes"></div>
+        <div className="bubbleRes"></div>
+        <div className="bubbleRes"></div>
+        <div className="bubbleRes"></div>
+        <div className="bubbleRes"></div>  
       </div>
    );
  };

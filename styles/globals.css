@@ -115,8 +115,7 @@ header .nav-btn {
 }
 
 .NavbarLinkBox{
-  justify-content: center;
-  align-items: center;
+  padding-left: 135px;
 }
 
 .footer-container {
@@ -124,6 +123,7 @@ padding-top: 100px;
 }
 
 .footer-bg {
+  position: relative;
   width: 100%;
   height: 100%;
   float: left;
@@ -155,6 +155,7 @@ padding-top: 100px;
     flex-direction: column;
     gap: 1.5rem;
     position: absolute;
+    padding: 0;
   }
 
   .HiddenIconsBox{
@@ -282,9 +283,12 @@ h2 {
   50%{
     transform:translateX(200px);
   }
+  80%{
+    transform:translateX(0);
+  }
   100%{
-    bottom:292vw;
-    transform:translateX(-65vw);
+    bottom:5800px;
+    transform:translateX(-80vw);
   }
 }
 
@@ -359,6 +363,41 @@ h2 {
       left:55%;
       animation-duration: 25s;
       animation-delay:1s;
+    }
+    .bubbleRes:nth-child(6){
+      width:45px;
+      height:45px;
+      left:65%;
+      animation-duration:40s;
+      animation-delay:3s;
+    }
+    .bubbleRes:nth-child(7){
+      width:50px;
+      height:50px;
+      left:70%;
+      animation-duration:35s;
+      animation-delay:2s;
+    }
+    .bubbleRes:nth-child(8){
+      width:25px;
+      height:25px;
+      left:80%;
+      animation-duration:29s;
+      animation-delay:2s;
+    }
+    .bubbleRes:nth-child(9){
+      width:15px;
+      height:15px;
+      left:70%;
+      animation-duration:35s;
+      animation-delay:1s;
+    }
+    .bubbleRes:nth-child(10){
+      width: 35px;
+      height: 35px;
+      left:25%;
+      animation-duration:35s;
+      animation-delay:4s;
     }
 }
 

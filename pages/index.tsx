@@ -15,7 +15,6 @@ const Home: NextPage = () => {
       <div><img className={styles.backgroundCity} src={`/bg-yellow.png`} alt="drop" /></div>
 
       <div><img className={styles.reefLeft} src={`/waterAssets/reef-left.png`} alt="drop" /></div>
-      <div><img className={styles.reefLeft} src={`/waterAssets/fish2.png`} alt="drop" /></div>
       <div><img className={styles.reefRight} src={`/waterAssets/reef-right.png`} alt="drop" /></div>
       <div className={styles.nftBoxGrid}>
         <div className={styles.buttonBox}>
@@ -37,6 +36,8 @@ const Home: NextPage = () => {
           </div>
         </div>
         <h1>ROADMAP</h1>
+        <div><img className={styles.fishRight} src={`/waterAssets/fish2.png`} alt="drop" /></div>
+        <div className={styles.waves}></div>
         <section className={styles.timelineSection}>
 	<div className={styles.timelineItems}>
 		<div className={styles.timelineItem}>
@@ -133,12 +134,20 @@ const Home: NextPage = () => {
       </li>
     </ul>
     </div>
-    {/* THIRD MEMBER */}
+  </div>
+</section>
+{/* END TEAM SECTION */}
+{/* START ARTISTS COLLAB SECTION */}
+<h1>ARTISTS COLLABORATIONS</h1>
+<div className={styles.waves2}></div>
+<section className={styles.sectionTeam}>
+  <div className={styles.containerTeam}>
+    {/* FIRST ARTIST */}
     <div className={styles.card}>
       <div className={styles.content}>
         <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
         <div className={styles.contentBox}>
-          <h3>Pinpin<br/><span>Founder</span></h3>
+          <h3>Pinpin<br/><span>Founder</span><br/><span>Web3 Developer</span></h3>
         </div>
       </div>
       <ul className={styles.sci}>
@@ -153,12 +162,12 @@ const Home: NextPage = () => {
       </li>
     </ul>
     </div>
-    {/* THIRD MEMBER */}
+    {/* SECOND ARTIST */}
     <div className={styles.card}>
       <div className={styles.content}>
         <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
         <div className={styles.contentBox}>
-          <h3>Pinpin<br/><span>Founder</span></h3>
+          <h3>GUIGZ<br/><span>Founder</span></h3>
         </div>
       </div>
       <ul className={styles.sci}>
@@ -173,7 +182,7 @@ const Home: NextPage = () => {
       </li>
     </ul>
     </div>
-    {/* THIRD MEMBER */}
+    {/* THIRD ARTIST */}
     <div className={styles.card}>
       <div className={styles.content}>
         <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
@@ -195,8 +204,8 @@ const Home: NextPage = () => {
     </div>
   </div>
 </section>
-{/* END TEAM SECTION */}
-{/* START TEAM SECTION */}
+{/* END ARTISTS COLLAB SECTION */}
+{/* START COLLAB SECTION */}
 <section className={styles.collabBox}>
         <div className={styles.collabIcon}>
         <a>

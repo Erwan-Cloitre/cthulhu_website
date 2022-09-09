@@ -23,6 +23,38 @@
   width: 10.7vw
 }
 
+.fishRight{
+  position: absolute;
+  right: 15%;
+  width: 20%;
+  opacity: 0.25;
+}
+
+.waves{
+  background-image: url(/waves.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 200%;
+  top: 80%;
+  left: 0;
+}
+
+.waves2{
+  background-image: url(/waves.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 200%;
+  top: 3000px;
+}
+
 .buttonBox{
   max-width: 26vw;
 }
@@ -49,7 +81,7 @@
 
 .newButton::before{
   width: 10px;
-  right: 35%;
+  right: 33%;
   content: " ";
   height: 120px;
   display: block;
@@ -79,11 +111,11 @@
 
 .newButton:hover{
   background: #e84048;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .newButton:hover::before{
-  transform: translateX(50px) rotate(30deg);
+  transform: translateX(60px) rotate(30deg);
 }
 
 .newButton:hover::after{
@@ -107,7 +139,6 @@
   font-size: 1.25rem;
   font-weight: 600;
   cursor: pointer;
-
   transition: background-color 300ms ease-in-out;
   transform-origin: center;
 }
