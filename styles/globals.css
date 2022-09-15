@@ -13,9 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 /* Set core body defaults */
@@ -65,6 +62,7 @@ header {
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .NavbarLogo{
@@ -111,6 +109,7 @@ header .nav-btn {
   display: flex;
   gap: 1.5rem;
   float: right;
+  align-items: center;
 }
 
 .NavbarLinkBox{
@@ -152,6 +151,7 @@ header .nav-btn {
   }
 
   .footerHomeContainer {
+    position: relative;
     padding-top: 100px;
     bottom: 0;
   }
@@ -238,7 +238,7 @@ h2 {
   position: relative;
   width: 100%;
   max-width: 100%;
-  z-index:0;
+  z-index:-1;
   top: 65vw; 
 }
 .bubble{
@@ -461,6 +461,7 @@ h2 {
 }
  
 #accordion li{
+  z-index: 1;
   list-style: none;
   width: 100%;
   margin-bottom: 10px;
@@ -511,3 +512,6 @@ h2 {
 
 /* END FAQ */
 
+.swiper {
+  justify-content: center;
+}

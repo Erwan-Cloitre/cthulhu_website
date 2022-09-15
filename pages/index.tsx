@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import Bubble from "../components/Bubble";
 import BubbleRes from "../components/BubbleRes";
+import ArtistSection from "../components/ArtistSection";
 import Faq from "../components/faq";
 import Footer from "../components/Footer";
 
@@ -93,119 +94,8 @@ const Home: NextPage = () => {
 </section>
 {/* TEAM SECTION */}
 <h1 className={styles.titlesHome}>MEET THE TEAM</h1>
-<section className={styles.sectionTeam}>
-  <div className={styles.containerTeam}>
-    {/* FIRST MEMBER */}
-    <div className={styles.card}>
-      <div className={styles.content}>
-        <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
-        <div className={styles.contentBox}>
-          <h3>Pinpin<br/><span>Founder</span><br/><span>Web3 Developer</span></h3>
-        </div>
-      </div>
-      <ul className={styles.sci}>
-      <li className={styles.firstIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.secondIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.thirdIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-    </ul>
-    </div>
-    {/* SECOND MEMBER */}
-    <div className={styles.card}>
-      <div className={styles.content}>
-        <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
-        <div className={styles.contentBox}>
-          <h3>GUIGZ<br/><span>Founder</span></h3>
-        </div>
-      </div>
-      <ul className={styles.sci}>
-      <li className={styles.firstIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.secondIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.thirdIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-    </ul>
-    </div>
-  </div>
-</section>
-{/* END TEAM SECTION */}
-{/* START ARTISTS COLLAB SECTION */}
-<h1 className={styles.titlesHome}>ARTISTS COLLABORATIONS</h1>
 <div className={styles.waves2}></div>
-<section className={styles.sectionTeam}>
-  <div className={styles.containerTeam}>
-    {/* FIRST ARTIST */}
-    <div className={styles.card}>
-      <div className={styles.content}>
-        <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
-        <div className={styles.contentBox}>
-          <h3>Pinpin<br/><span>Founder</span><br/><span>Web3 Developer</span></h3>
-        </div>
-      </div>
-      <ul className={styles.sci}>
-      <li className={styles.firstIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.secondIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.thirdIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-    </ul>
-    </div>
-    {/* SECOND ARTIST */}
-    <div className={styles.card}>
-      <div className={styles.content}>
-        <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
-        <div className={styles.contentBox}>
-          <h3>GUIGZ<br/><span>Founder</span></h3>
-        </div>
-      </div>
-      <ul className={styles.sci}>
-      <li className={styles.firstIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.secondIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.thirdIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-    </ul>
-    </div>
-    {/* THIRD ARTIST */}
-    <div className={styles.card}>
-      <div className={styles.content}>
-        <div className={styles.imgBox}><img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/></div>
-        <div className={styles.contentBox}>
-          <h3>Pinpin<br/><span>Founder</span></h3>
-        </div>
-      </div>
-      <ul className={styles.sci}>
-      <li className={styles.firstIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.secondIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-      <li className={styles.thirdIcon}>
-        <a href="#"><img src={`/icons/twitter.png`}></img></a>
-      </li>
-    </ul>
-    </div>
-  </div>
-</section>
-{/* END ARTISTS COLLAB SECTION */}
+<ArtistSection />
 {/* START COLLAB SECTION */}
 <section className={styles.collabBox}>
         <div className={styles.collabIcon}>
