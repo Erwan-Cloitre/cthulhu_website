@@ -11,7 +11,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider desiredChainId={activeChainId}>
       <Helmet>
-      <title>Eternal Cthulhu</title>
+      <title lang="en">Eternal Cthulhu</title>
+      <link rel="canonical" href="http://www.eternalcthulhu.com" />
+      <link title="Cthulhu Mint" rel="alternate" href="https://www.eternalcthulhu.com/mint" />
       <meta name="description" content="Eternal Cthulhu is a NFT collection based on ethereum blockchain" />
       <meta name="keywords" content="NFT, ETH, ETHEREUM, CTHULHU, ETERNAL, CRYPTO, MINT, STAKING, COLLECTION, OPENSEA"></meta>
       <meta name="author" content="@Pinpin.eth"></meta>
