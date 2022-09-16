@@ -6,12 +6,14 @@ import BubbleRes from "../components/BubbleRes";
 import ArtistSection from "../components/ArtistSection";
 import Faq from "../components/faq";
 import Footer from "../components/Footer";
+import Meta from "../components/Meta";
 
 const Home: NextPage = () => {
   const router = useRouter();
 
   return (
     <div className={styles.containerHome}>
+      <Meta />
      
       {/* Top Section */}
       <div><img className={styles.backgroundCity} src={`/bg-yellow.png`} alt="drop" /></div>
