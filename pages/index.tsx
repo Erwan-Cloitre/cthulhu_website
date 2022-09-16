@@ -99,22 +99,22 @@ const Home: NextPage = () => {
 {/* START COLLAB SECTION */}
 <section className={styles.collabBox}>
         <div className={styles.collabIcon}>
-        <a>
+        <a href="#">
           <img src={`/collab/logo1.png`}/>
         </a>
         </div>
         <div className={styles.collabIcon}>
-        <a className={styles.collabIcon}>
+        <a href="#">
           <img src={`/collab/logo2.png`}/>
         </a>
         </div>
         <div className={styles.collabIcon}>
-        <a className={styles.collabIcon}>
+        <a href="#">
           <img src={`/collab/logo3.png`}/>
         </a>
         </div>
         <div className={styles.collabIcon}>
-        <a className={styles.collabIcon}>
+        <a href="#">
           <img src={`/collab/logo4.webp`}/>
         </a>
         </div>
