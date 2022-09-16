@@ -1,6 +1,14 @@
+import Image from 'next/image'
 const FooterStake = () => {
   return (
-    <div className="footerStakeContainer"><img className="footerHomebg" src={`/footer.png`} alt="drop" /></div>
+    <div className="FooterStakeWrap">
+      <Image
+    alt="Mountains"
+    src="/footer.png"
+    layout="fill"
+    objectFit="cover"
+    quality={100}
+  /></div>
     
   );
 };

@@ -109,7 +109,7 @@ const Stake: NextPage = () => {
   }
 
   return (
-    <div className={styles.containerMint}>
+    <div className={styles.containerStake}>
       <h1 className={styles.h1}>Stake Your NFTs</h1>
 
       <hr className={`${styles.divider} ${styles.spacerTop}`} />

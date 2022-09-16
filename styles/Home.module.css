@@ -1,8 +1,3 @@
-.backgroundCity {
-  max-width: 100%;
-  height: auto;
-}
-
 .logo{
   width: 200px;
 }
@@ -162,9 +157,19 @@
     width: 100%;
   }
 
+  .containerStake{
+    padding-top: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   .containerMint p{
     width: 80%;
   }
+  
 }
 @media only screen and (min-width: 700px) {
   .containerMint {
@@ -174,6 +179,17 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    z-index: 2;
+  }
+
+  .containerStake {
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
   }
 
   .containerMint p{
@@ -890,16 +906,4 @@
   justify-items: center;
   max-height: 75px;
   max-width: 250px;
-}
-
-.containerStake{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(./../public/footer.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
 }

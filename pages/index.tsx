@@ -6,6 +6,7 @@ import BubbleRes from "../components/BubbleRes";
 import ArtistSection from "../components/ArtistSection";
 import Faq from "../components/faq";
 import Footer from "../components/Footer";
+import Image from 'next/image'
 /*Images */
 import background from '../public/bg-yellow.png';
 import reefLeft from '../public/waterAssets/reef-left.png';
@@ -24,7 +25,14 @@ const Home: NextPage = () => {
     <div className={styles.containerHome}>
      
       {/* Top Section */}
-      <div><img className={styles.backgroundCity} src={background.src} alt="drop" /></div>
+      <div><Image
+      alt="Background"
+      src='/bg-yellow.png'
+      layout="responsive"
+      width={1920}
+      height={1200}
+      quality={100}
+    /></div>
 
 
       <div><img className={styles.reefLeft} src={reefLeft.src} alt="drop" /></div>
