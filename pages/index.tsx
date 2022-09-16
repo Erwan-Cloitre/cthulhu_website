@@ -25,7 +25,8 @@ const Home: NextPage = () => {
     <div className={styles.containerHome}>
      
       {/* Top Section */}
-      <div><Image
+      <div>
+        <Image
       alt="Background"
       src='/bg-yellow.png'
       layout="responsive"
@@ -35,8 +36,16 @@ const Home: NextPage = () => {
     /></div>
 
 
-      <div><img className={styles.reefLeft} src={reefLeft.src} alt="drop" /></div>
-      <div><img className={styles.reefRight} src={reefRight.src} alt="drop" /></div>
+      <div className={styles.reefLeft}>
+        <Image
+          src="/waterAssets/reef-left.png"
+          alt="Reef left"
+          layout="fixed"
+          width={154}
+          height={474}
+          quality={100}
+    /></div>
+      <div className={styles.reefRight}><img src={reefRight.src} alt="drop" /></div>
       <section className={styles.nftBoxGrid}>
         <div className={styles.buttonBox}>
           <h1>ETERNAL CTHULHU</h1>
