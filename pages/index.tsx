@@ -100,22 +100,22 @@ const Home: NextPage = () => {
 <section className={styles.collabBox}>
         <div className={styles.collabIcon}>
         <a href="#">
-          <img src={`/collab/logo1.png`}/>
+          <img src={`/collab/logo1.png`} alt="Collab icon"/>
         </a>
         </div>
         <div className={styles.collabIcon}>
         <a href="#">
-          <img src={`/collab/logo2.png`}/>
+          <img src={`/collab/logo2.png`} alt="Collab icon"/>
         </a>
         </div>
         <div className={styles.collabIcon}>
         <a href="#">
-          <img src={`/collab/logo3.png`}/>
+          <img src={`/collab/logo3.png`} alt="Collab icon"/>
         </a>
         </div>
         <div className={styles.collabIcon}>
         <a href="#">
-          <img src={`/collab/logo4.webp`}/>
+          <img src={`/collab/logo4.webp`} alt="Collab icon"/>
         </a>
         </div>
       </section>

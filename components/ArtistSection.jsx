@@ -42,7 +42,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin<br/><span>Founder</span></h3>
@@ -50,13 +50,13 @@ const ArtistSection = () => {
                 </div>
                     <ul className={styles.sci}>
                       <li className={styles.firstIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                       <li className={styles.secondIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                     <li className={styles.thirdIcon}>
-                      <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                      <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                     </li>
                   </ul>
               </div>
@@ -65,7 +65,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin2<br/><span>Founder</span></h3>
@@ -73,13 +73,13 @@ const ArtistSection = () => {
                 </div>
                     <ul className={styles.sci}>
                       <li className={styles.firstIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                       <li className={styles.secondIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                     <li className={styles.thirdIcon}>
-                      <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                      <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                     </li>
                   </ul>
               </div>
@@ -88,7 +88,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin3<br/><span>Founder</span></h3>
@@ -96,13 +96,13 @@ const ArtistSection = () => {
                 </div>
                     <ul className={styles.sci}>
                       <li className={styles.firstIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                       <li className={styles.secondIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                     <li className={styles.thirdIcon}>
-                      <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                      <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                     </li>
                   </ul>
               </div>
@@ -111,7 +111,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin4<br/><span>Founder</span></h3>
@@ -119,13 +119,13 @@ const ArtistSection = () => {
                 </div>
                     <ul className={styles.sci}>
                       <li className={styles.firstIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                       <li className={styles.secondIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                     <li className={styles.thirdIcon}>
-                      <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                      <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                     </li>
                   </ul>
               </div>
@@ -134,7 +134,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`}/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin5<br/><span>Founder</span></h3>
@@ -142,13 +142,13 @@ const ArtistSection = () => {
                 </div>
                     <ul className={styles.sci}>
                       <li className={styles.firstIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                       <li className={styles.secondIcon}>
-                        <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                        <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                       </li>
                     <li className={styles.thirdIcon}>
-                      <a href="#"><img src={`/icons/twitter.png`}></img></a>
+                      <a href="#"><img src={`/icons/twitter.png`} alt="Social icon"></img></a>
                     </li>
                   </ul>
               </div>

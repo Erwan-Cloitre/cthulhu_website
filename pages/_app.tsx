@@ -12,7 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThirdwebProvider desiredChainId={activeChainId}>
       <Helmet>
       <title>Eternal Cthulhu</title>
-      <meta name="Eternal Cthulhu is a NFT collection on ethereum blockchain" content="Eternal Cthulhu NFT" />
+      <meta name="description" content="Eternal Cthulhu is a NFT collection based on ethereum blockchain" />
+      <meta name="keywords" content="NFT, ETH, ETHEREUM, CTHULHU, ETERNAL, CRYPTO, MINT, STAKING, COLLECTION, OPENSEA"></meta>
+      <meta name="author" content="@Pinpin.eth"></meta>
     </Helmet>
        <Navbar />
       <Component {...pageProps} />
