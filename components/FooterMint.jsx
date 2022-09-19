@@ -1,7 +1,7 @@
 import Image from 'next/image'
 const FooterMint = () => {
   return (
-    <div className="FooterWrap">
+    <div className="FooterStakeWrap">
       <Image
         alt="Mountains"
         src="/footer.png"

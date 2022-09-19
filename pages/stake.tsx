@@ -1,7 +1,7 @@
 import {
+  ConnectWallet,
   ThirdwebNftMedia,
   useAddress,
-  useMetamask,
   useNFTDrop,
   useToken,
   useTokenBalance,
@@ -22,7 +22,6 @@ const stakingContractAddress = "0x49DC8065b6271C230ae00d52000a18CE340d746f";
 const Stake: NextPage = () => {
   // Wallet Connection Hooks
   const address = useAddress();
-  const connectWithMetamask = useMetamask();
 
   // Contract Hooks
   const nftDropContract = useNFTDrop(nftDropContractAddress);
@@ -115,9 +114,12 @@ const Stake: NextPage = () => {
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
       {!address ? (
-        <button className={styles.mainButton} onClick={connectWithMetamask}>
-          Connect Wallet
-        </button>
+        <div className={styles.connectButton}>
+          <ConnectWallet
+            colorMode="dark"
+            accentColor="#fcd230"
+          />
+      </div>
       ) : (
         <>
           <h2>Your Tokens</h2>

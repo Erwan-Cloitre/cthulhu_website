@@ -37,10 +37,12 @@ const Mint: NextPage = () => {
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
       {!address ? (
-        <ConnectWallet
-          colorMode="dark"
-          accentColor="#fcd230"
-        />
+        <div className={styles.connectButton}>
+          <ConnectWallet
+            colorMode="dark"
+            accentColor="#fcd230"
+          />
+        </div>
       ) : (
         <button
           className={`${styles.mainButton} ${styles.spacerBottom}`}
