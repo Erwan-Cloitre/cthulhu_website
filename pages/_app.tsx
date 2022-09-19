@@ -10,7 +10,8 @@ const activeChainId = ChainId.Mumbai;
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider desiredChainId={activeChainId}>
-      <Helmet htmlAttributes={{ lang : 'en' }}>
+      <Helmet>
+      <html lang="en" />
       <title lang="en">Eternal Cthulhu</title>
       <link rel="canonical" href="http://www.eternalcthulhu.com" />
       <link title="Cthulhu Mint" rel="alternate" href="https://www.eternalcthulhu.com/mint" />
