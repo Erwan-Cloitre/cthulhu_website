@@ -3,7 +3,7 @@ const FooterStake = () => {
   return (
     <div className="FooterStakeWrap">
       <Image
-    alt="Mountains"
+    alt="Footer"
     src="/footer.png"
     layout="fill"
     objectFit="cover"

@@ -150,8 +150,6 @@ const Home: NextPage = () => {
       {/* END COLLAB SECTION */}
       <h1 className={styles.titlesHome}>FREQUENTLY ASKED QUESTIONS</h1>
       <Faq />
-      <Bubble />
-      <BubbleRes />
       <Footer />
     </div>
   );
