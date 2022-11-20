@@ -18,6 +18,7 @@
     "@thirdweb-dev/contracts": "^2.4.4",
     "@thirdweb-dev/react": "^2.9.7",
     "@thirdweb-dev/sdk": "^2.3.8",
+    "@vercel/analytics": "^0.1.5",
     "ethers": "^5.7.0",
     "framer-motion": "^4.1.17",
     "next": "^12.1.6",

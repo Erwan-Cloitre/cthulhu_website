@@ -3,6 +3,7 @@ import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
+import { Analytics } from '@vercel/analytics/react';
 
 // This is the chainId your dApp will work on.
 const activeChainId = ChainId.Mumbai;
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Helmet>
       <Navbar />
       <Component {...pageProps} />
+      <Analytics />
     </ThirdwebProvider>
   );
 }
