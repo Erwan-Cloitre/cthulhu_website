@@ -6,6 +6,11 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'rubik';
+  src: url('./fonts/Rubik-VariableFont_wght.ttf') format('ttf');
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -45,6 +50,10 @@ select {
 
 h1{
   font-size: 5vw;
+}
+
+p{
+  font-family: 'rubik', sans-serif;
 }
 
 header {
@@ -140,11 +149,11 @@ header .nav-btn {
 
     .FooterStakeWrap {
       position: fixed;
-      height: 100vh;
       width: 100vw;
       overflow: hidden;
       z-index: -1;
       bottom: 0;
+      opacity: 0.75;
     }
 
 /*End Footer Mint CSS*/
@@ -237,222 +246,7 @@ header .nav-btn {
 
 h2 {
   font-size: 2rem;
-}
-
-.bubblesRes{
-  display: none;
-}
-
-.bubbles{
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  z-index:-1;
-  top: 65vw; 
-}
-.bubble{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background:#f1f1f1;
-  border-radius:50%;
-  opacity:0.5;
-  animation: rise 16s infinite ease-in;
-}
-.bubble:nth-child(1){
-  width: 25px;
-  height: 25px;
-  left:10%;
-  animation-duration:28s;
-}
-.bubble:nth-child(2){
-  width:20px;
-  height:20px;
-  left:20%;
-  animation-duration:35s;
-  animation-delay:1s;
-}
-.bubble:nth-child(3){
-  width:35px;
-  height:35px;
-  left:35%;
-  animation-duration:38s;
-  animation-delay:2s;
-}
-.bubble:nth-child(4){
-  width: 50px;
-  height: 50px;
-  left:50%;
-  animation-duration:39s;
-  animation-delay:1s;
-}
-.bubble:nth-child(5){
-  width:35px;
-  height:35px;
-  left:55%;
-  animation-duration: 25s;
-  animation-delay:1s;
-}
-.bubble:nth-child(6){
-  width:45px;
-  height:45px;
-  left:65%;
-  animation-duration:40s;
-  animation-delay:3s;
-}
-.bubble:nth-child(7){
-  width:50px;
-  height:50px;
-  left:70%;
-  animation-duration:35s;
-  animation-delay:2s;
-}
-.bubble:nth-child(8){
-  width:25px;
-  height:25px;
-  left:80%;
-  animation-duration:29s;
-  animation-delay:2s;
-}
-.bubble:nth-child(9){
-  width:15px;
-  height:15px;
-  left:70%;
-  animation-duration:35s;
-  animation-delay:1s;
-}
-.bubble:nth-child(10){
-  width: 35px;
-  height: 35px;
-  left:25%;
-  animation-duration:35s;
-  animation-delay:4s;
-}
-@keyframes rise{
-  0%{
-    bottom:0;
-    transform:translateX(0);
-  }
-  50%{
-    transform:translateX(200px);
-  }
-  80%{
-    transform:translateX(0);
-  }
-  100%{
-    bottom:5800px;
-    transform:translateX(-80vw);
-  }
-}
-
-@keyframes riseResponsive{
-  0%{
-    bottom:0;
-    transform:translateX(0);
-  }
-  50%{
-    transform:translateX(20px);
-  }
-  90%{
-    transform:translateX(0);
-  }
-  100%{
-    bottom:1200vw;
-    transform:translateX(-100vw);
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .bubbles{
-    display: none;
-  }
-    .bubblesRes{
-      display: block;
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      z-index:0;
-      top: 65vw; 
-    }
-    .bubbleRes{
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background:#f1f1f1;
-      border-radius:50%;
-      opacity:0.5;
-      animation: riseResponsive 25s infinite ease-in;
-    }
-    .bubbleRes:nth-child(1){
-      width: 25px;
-      height: 25px;
-      left:10%;
-      animation-duration:28s;
-    }
-    .bubbleRes:nth-child(2){
-      width:20px;
-      height:20px;
-      left:20%;
-      animation-duration:35s;
-      animation-delay:1s;
-    }
-    .bubbleRes:nth-child(3){
-      width:35px;
-      height:35px;
-      left:35%;
-      animation-duration:38s;
-      animation-delay:2s;
-    }
-    .bubbleRes:nth-child(4){
-      width: 50px;
-      height: 50px;
-      left:50%;
-      animation-duration:39s;
-      animation-delay:1s;
-    }
-    .bubbleRes:nth-child(5){
-      width:35px;
-      height:35px;
-      left:55%;
-      animation-duration: 25s;
-      animation-delay:1s;
-    }
-    .bubbleRes:nth-child(6){
-      width:45px;
-      height:45px;
-      left:65%;
-      animation-duration:40s;
-      animation-delay:3s;
-    }
-    .bubbleRes:nth-child(7){
-      width:50px;
-      height:50px;
-      left:70%;
-      animation-duration:35s;
-      animation-delay:2s;
-    }
-    .bubbleRes:nth-child(8){
-      width:25px;
-      height:25px;
-      left:80%;
-      animation-duration:29s;
-      animation-delay:2s;
-    }
-    .bubbleRes:nth-child(9){
-      width:15px;
-      height:15px;
-      left:70%;
-      animation-duration:35s;
-      animation-delay:1s;
-    }
-    .bubbleRes:nth-child(10){
-      width: 35px;
-      height: 35px;
-      left:25%;
-      animation-duration:35s;
-      animation-delay:4s;
-    }
-}
+}newButton
 
 /* START FAQ */
 

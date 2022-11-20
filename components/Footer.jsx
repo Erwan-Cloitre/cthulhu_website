@@ -5,8 +5,8 @@ const Footer = () => {
     alt="Footer"
     src='/footer.png'
     layout="responsive"
-    width={1440}
-    height={870}
+    width={3840}
+    height={2160}
     quality={100}
   /></div>
     

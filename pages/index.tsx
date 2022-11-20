@@ -1,15 +1,11 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
-import Bubble from "../components/Bubble";
-import BubbleRes from "../components/BubbleRes";
 import ArtistSection from "../components/ArtistSection";
 import Faq from "../components/faq";
 import Footer from "../components/Footer";
 import Image from 'next/image'
 /*Images */
-import background from '../public/bg-yellow.png';
-import reefLeft from '../public/waterAssets/reef-left.png';
 import reefRight from '../public/waterAssets/reef-right.png';
 import hiddenCthulhu from '../public/hidden.jpg';
 import fish from '../public/waterAssets/fish2.png';

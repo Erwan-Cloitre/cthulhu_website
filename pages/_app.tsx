@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <meta name="keywords" content="NFT, ETH, ETHEREUM, CTHULHU, ETERNAL, CRYPTO, MINT, STAKING, COLLECTION, OPENSEA"></meta>
       <meta name="author" content="@Pinpin.eth"></meta>
     </Helmet>
-       <Navbar />
+      <Navbar />
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
