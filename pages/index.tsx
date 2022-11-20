@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       <section className={styles.nftBoxGrid}>
         <div className={styles.buttonBox}>
           <h1>ETERNAL CTHULHU</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+          <p>A limited collection of XXXX NFTs based on Ethereum Blockchain to awaken cthulhu in the metaverse.</p>
           {/* Mint a new NFT */}
           <button 
           className={styles.newButton}
