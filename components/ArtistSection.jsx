@@ -68,7 +68,7 @@ const ArtistSection = () => {
                     <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
-                      <h3>Pinpin2<br/><span>Founder</span></h3>
+                      <h3>Guigz<br/><span>Founder</span></h3>
                     </div>
                 </div>
                     <ul className={styles.sci}>
