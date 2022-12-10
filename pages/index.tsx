@@ -61,7 +61,7 @@ const Home: NextPage = () => {
             <img className={styles.hiddenCthulhu} src={hiddenCthulhu.src} alt="hiddenCthulhu" />
           </div>
         </section>
-        <h1 className={styles.titlesHome}>ROADMAP</h1>
+        <h1 className={styles.titlesHome}>DREAM MAP</h1>
         <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
         <div className={styles.waves}></div>
         <section className={styles.timelineSection}>
