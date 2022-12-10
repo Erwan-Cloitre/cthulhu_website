@@ -18,7 +18,7 @@ We are investigator, artist, developer, writer and dreamer all around the world 
               <input type="radio" name="accordion" id="second"></input>
               <div className="answer">
                 <p>Get one eternal cthulhu NFT<br></br>
-To do it, get the Metamask Chrome or Firefox extension. Load it with ETH through services that allow you to change your money to ETH like Binance, Coinbase... (don't use FTX) <br></br>
+To do it, get the Metamask Chrome or Firefox extension. Load it with ETH through services that allow you to change your money to ETH like Binance, Coinbase...  (don&apos;t use FTX) <br></br>
 Then, click the button MINT  to connect your wallet and approve the transaction on Metamask. <br></br>
 To conclude, believe in ETH and the great old ones
                 </p>
