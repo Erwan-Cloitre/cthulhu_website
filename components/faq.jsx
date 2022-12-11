@@ -8,7 +8,7 @@ const Faq = () => {
               <input type="radio" name="accordion" id="first"></input>
               <div className="answer">
                 <p>We are a group of cultist who worships Cthulhu and Ethereum. <br></br>
-Our goal is to share our knowledge of the blockchain and the great old ones. <br></br>
+Our goal is to share our knowledge of the Blockchain and the Great Old Ones. <br></br>
 We are investigator, artist, developer, writer and dreamer all around the world who go straight on through the unknown.
                 </p>
               </div>
