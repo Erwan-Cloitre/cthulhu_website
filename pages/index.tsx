@@ -34,8 +34,8 @@ const Home: NextPage = () => {
       height={1200}
       quality={100}
     /></div>
-    <h1 className={styles.landingTitle}>Découvrez l'investigateur en vous</h1>
-    <p className={styles.landingText}>Arriverez-vous à percer à jour le mythe de Cthulhu ?</p>
+    <h1 className={styles.landingTitle}>D&eacute;couvrez l&apos;investigateur en vous</h1>
+    <p className={styles.landingText}>Arriverez-vous &agrave; percer &agrave; jour le mythe de Cthulhu ?</p>
     {/* Mint a new NFT */}
     <button 
       className={styles.landingButton}
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       onClick={() => router.push(`/mint`)}
      >
        <span>
-        Relevez le défi
+        Relevez le d&eacute;fi
        </span>
     </button>
   </div>
@@ -64,8 +64,8 @@ const Home: NextPage = () => {
             <img className={styles.hiddenCthulhu} src={hiddenCthulhu.src} alt="hiddenCthulhu" />
         </div>
         <div className={styles.buttonBox}>
-          <h1>L'investigateur : le mythe de Cthulhu</h1>
-          <p>Plongez dans l'intrigue et élucidez le mystère enfui derrère le colis légué en héritage par le professeur Angell et déjouez le plan du culte !</p>
+          <h1>L&apos;investigateur : le mythe de Cthulhu</h1>
+          <p>Plongez dans l&apos;intrigue et &eacute;lucidez le mystère enfui derrère le colis l&eacute;gu&eacute; en h&eacute;ritage par le professeur Angell et d&eacute;jouez le plan du culte !</p>
           {/* Mint a new NFT */}
           <button 
           className={styles.newButton}
