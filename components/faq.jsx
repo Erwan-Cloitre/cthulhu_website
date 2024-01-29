@@ -4,11 +4,11 @@ const Faq = () => {
 				<ol className="faq">
 					<li>
 						<input type="checkbox" className="toggle"/>
-						<h3 className="question">C'est quoi "L&apos;investigateur : le mythe de Cthulhu" ?</h3>
+						<h3 className="question">C&apos;est quoi &quot;L&apos;investigateur : le mythe de Cthulhu&quot; ?</h3>
 						<div className="icon"></div>
 						<div className="border"></div>
 						<div className="answer">
-							<p>Une enqu&ecirc;te immersive dans l&apos;univers d'H.P Lovecraft.</p>
+							<p>Une enqu&ecirc;te immersive dans l&apos;univers d&apos;H.P Lovecraft.</p>
 						</div>
 					</li>
 					<li>
@@ -26,7 +26,7 @@ const Faq = () => {
 						<div className="icon"></div>
 						<div className="border"></div>
 						<div className="answer">
-							<p>Pour ceux qui le souhaite, il est possible d'acqu&eacute;rir la boîte via un NFT. Cela permet de l&apos;avoir en pr&eacute;commande, des cadeaux en plus dans le colis et des r&eacute;ductions sur les prochaines enqu&ecirc;tes.</p>
+							<p>Pour ceux qui le souhaite, il est possible d&apos;acqu&eacute;rir la boîte via un NFT. Cela permet de l&apos;avoir en pr&eacute;commande, des cadeaux en plus dans le colis et des r&eacute;ductions sur les prochaines enqu&ecirc;tes.</p>
 						</div>
 					</li>
 				</ol>
