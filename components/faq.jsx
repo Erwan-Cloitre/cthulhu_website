@@ -1,44 +1,36 @@
 const Faq = () => {
-
   return (
-    <div className="wrapper">
-      <ul id="accordion">
-          <li>
-              <label htmlFor="first">What is Eternal Cthulhu Cultist Club ? <span>&#x3e;</span></label>
-              <input type="radio" name="accordion" id="first"></input>
-              <div className="answer">
-                <p>We are a group of cultist who worships Cthulhu and Ethereum. <br></br>
-Our goal is to share our knowledge of the Blockchain and the Great Old Ones. <br></br>
-We are investigator, artist, developer, writer and dreamer all around the world who go straight on through the unknown.
-                </p>
-              </div>
-          </li>
-          <li>
-              <label htmlFor="second">How to join the cult ? <span>&#x3e;</span></label>
-              <input type="radio" name="accordion" id="second"></input>
-              <div className="answer">
-                <p>Get one eternal cthulhu NFT<br></br>
-To do it, get the Metamask Chrome or Firefox extension. Load it with ETH through services that allow you to change your money to ETH like Binance, Coinbase...  (don&apos;t use FTX) <br></br>
-Then, click the button MINT  to connect your wallet and approve the transaction on Metamask. <br></br>
-To conclude, believe in ETH and the great old ones
-                </p>
-              </div>
-          </li>
-          <li>
-              <label htmlFor="third">What happens when I enter the cult ?<span>&#x3e;</span></label>
-              <input type="radio" name="accordion" id="third"></input>
-              <div className="answer">
-                <p>- Access to cultist community <br></br>
-- Collecting token from our lord and savior cthulhu<br></br>
-- Receiving air drop and relics<br></br>
-- Invitation for secret event<br></br>
-- More secret incoming<br></br>
-- Have faith in Ethereum and Cthulhu<br></br>
-                </p>
-              </div>
-          </li>
-      </ul>
-    </div>
+    <section id="faq">
+				<ol className="faq">
+					<li>
+						<input type="checkbox" className="toggle"/>
+						<h3 className="question">C'est quoi "L'investigateur : le mythe de Cthulhu" ?</h3>
+						<div className="icon"></div>
+						<div className="border"></div>
+						<div className="answer">
+							<p>Une enquête immersive dans l'univers d'H.P Lovecraft.</p>
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" className="toggle"/>
+						<h3 className="question">De quoi ai-je besoin pour commencer l'enquête ?</h3>
+						<div className="icon"></div>
+						<div className="border"></div>
+						<div className="answer">
+							<p>L'investigation commence dès la réception du colis.</p>
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" className="toggle"/>
+						<h3 className="question">Quel lien avec les NFT ?</h3>
+						<div className="icon"></div>
+						<div className="border"></div>
+						<div className="answer">
+							<p>Pour ceux qui le souhaite, il est possible d'acquérir la boîte via un NFT. Cela permet de l'avoir en précommande, des cadeaux en plus dans le colis et des réductions sur les prochaines enquêtes.</p>
+						</div>
+					</li>
+				</ol>
+			</section>
   );
 };
 

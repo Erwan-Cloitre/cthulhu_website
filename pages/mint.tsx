@@ -1,4 +1,5 @@
-import { ConnectWallet, useAddress, useNFTDrop } from "@thirdweb-dev/react";
+import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
+import { useContract } from '@thirdweb-dev/react'
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
@@ -10,9 +11,7 @@ const Mint: NextPage = () => {
   const address = useAddress();
 
   // Get the NFT Collection contract
-  const nftDropContract = useNFTDrop(
-    "0xC59ef2a25324BdF61CCDAb2B9A104A9bf9e33DEb"
-  );
+  const nftDropContract = useContract("0x7a0245FfF19a0261b17D7be87F426C4357719C38", "nft-drop").contract;
 
   async function claimNft() {
     try {
@@ -38,10 +37,7 @@ const Mint: NextPage = () => {
 
       {!address ? (
         <div className={styles.connectButton}>
-          <ConnectWallet
-            colorMode="dark"
-            accentColor="#fcd230"
-          />
+          <ConnectWallet/>
         </div>
       ) : (
         <button

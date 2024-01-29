@@ -6,7 +6,7 @@ const FooterMint = () => {
     src='/footer.png'
     layout="responsive"
     width={3839}
-    height={1378}
+    height={2160}
     quality={100}
   /></div>
   );

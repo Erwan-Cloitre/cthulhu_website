@@ -33,9 +33,6 @@ const Navbar = () => {
       <Link href="/mint">
         <a>Mint</a>
       </Link>
-      <Link href="/stake">
-        <a>Staking</a>
-      </Link>
       </div>
       <div className="HiddenIconsBox">
       <Link href="/">

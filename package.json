@@ -16,8 +16,8 @@
     "@openzeppelin/contracts": "^4.7.3",
     "@openzeppelin/contracts-upgradeable": "^4.7.3",
     "@thirdweb-dev/contracts": "^2.4.4",
-    "@thirdweb-dev/react": "^2.9.7",
-    "@thirdweb-dev/sdk": "^2.3.8",
+    "@thirdweb-dev/react": "^4.2.2",
+    "@thirdweb-dev/sdk": "^4.0.25",
     "@vercel/analytics": "^0.1.5",
     "ethers": "^5.7.0",
     "framer-motion": "^4.1.17",
@@ -27,6 +27,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-loader-spinner": "^5.3.4",
+    "react-player": "^2.14.1",
     "styled-components": "^5.3.5",
     "swiper": "^8.4.2"
   },

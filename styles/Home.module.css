@@ -1,6 +1,95 @@
 .logo{
   width: 200px;
 }
+ 
+.landingImg2{
+  display: block;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(2,0,0,1) 100%);
+  z-index: 10000000;
+}
+
+.landingTitle {
+  font-size: 4vw;
+  position: absolute;
+  top: 24vw;
+  padding-left: 50px;
+  text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+}
+
+.landingText {
+  font-family: 'arcane_nineregular';
+  font-size: 2vw;
+  position: absolute;
+  top: 28vw;
+  padding-top: 30px;
+  padding-left: 50px;
+  text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+}
+
+.landingButton{
+  height: 60px;
+  position: absolute;
+  top: 32vw;
+  left: 0;
+  margin-top: 40px;
+  margin-left: 50px;
+  font-family: 'arcane_nineregular';
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  border-radius: 40px;
+  border: 2px solid black;
+  width: 20vw;
+  min-width: 230px;
+  background: #fcd230;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  text-shadow: .1em .1em rgba(0, 0, 0, 0.2);
+}
+
+.landingButton::before{
+  width: 0.625rem;
+  right: 38%;
+  content: " ";
+  height: 120px;
+  display: block;
+  top: -30px;
+  opacity: 0.3;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(30deg);
+  transition: all .2s;
+}
+
+.landingButton::after{
+  width: 2.5rem;
+  right: 12%;
+  content: " ";
+  height: 120px;
+  background: #fff;
+  display: block;
+  top: -30px;
+  opacity: .3;
+  position: absolute;
+  transform: rotate(30deg);
+  transition: all .2s;
+  z-index: 1;
+}
+
+.landingButton:hover{
+  background: #e84048;
+  transform: scale(1.1);
+}
+
+.landingButton:hover::before{
+  transform: translateX(60px) rotate(30deg);
+}
+
+.landingButton:hover::after{
+  transform: translateX(50px) rotate(30deg);
+}
 
 .reefLeft{
   position: absolute;
@@ -50,11 +139,8 @@
   top: 3000px;
 }
 
-.buttonBox{
-  max-width: 26vw;
-}
-
 .newButton{
+  height: 60px;
   margin-top: 50px;
   font-size: 36px;
   font-weight: 600;
@@ -510,25 +596,32 @@
 @media only screen and (min-width: 700px) {
 .nftBoxGrid {
   width: 100%;
-  max-width: 95vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 15%;
-  margin-top: 28px;
+  gap: 10%;
   flex-wrap: wrap;
   z-index: 1;
   padding-bottom: 50px;
 }
 
+.buttonBox{
+  max-width: 35vw;
+  text-align: justify;
+}
+
 .buttonBox h1{
-  font-size: 3.5vw;
+  font-size: 4rem;
+}
+
+.buttonBox p{
+  font-size: 1.6rem;
 }
 
 .hiddenCthulhu{
-  width: 26vw;
-  height: 26vw;
+  width: 40vw;
+  height: auto;
   border-radius: 0.5rem;
 }
 .titlesHome{
@@ -961,4 +1054,15 @@
   justify-items: center;
   max-height: 75px;
   max-width: 250px;
+}
+
+.player-wrapper {
+  justify-content: center;
+}
+
+.trailer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
