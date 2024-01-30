@@ -25,28 +25,25 @@ const Home: NextPage = () => {
      
       {/* Top Section */}
       <div>
-        <div >
-          <Image
-      alt="Background"
-      src='/bg-city.png'
-      layout="responsive"
-      width={1920}
-      height={1200}
-      quality={100}
-    /></div>
-    <h1 className={styles.landingTitle}>D&eacute;couvrez l&apos;investigateur en vous</h1>
-    <p className={styles.landingText}>Arriverez-vous &agrave; percer &agrave; jour le mythe de Cthulhu ?</p>
-    {/* Mint a new NFT */}
-    <button 
-      className={styles.landingButton}
-      role="button"
-      onClick={() => router.push(`/mint`)}
-     >
-       <span>
-        Relevez le d&eacute;fi
-       </span>
-    </button>
-  </div>
+        <div className={styles.containerLandingImg}>
+          <img className={styles.landingImg} src="/bg-city.png" alt="" />
+          <img className={styles.landingImgMobile} src="/bg-city-mobile2.png" alt="" />
+        </div>
+        <div className={styles.landingBox}>
+          <h1 className={styles.landingTitle}>D&eacute;couvrez l&apos;investigateur en vous</h1>
+          <p className={styles.landingText}>Arriverez-vous &agrave; percer &agrave; jour le mythe de Cthulhu ?</p>
+          {/* Mint a new NFT */}
+          <button 
+            className={styles.landingButton}
+            role="button"
+            onClick={() => router.push(`/mint`)}
+          >
+            <span>
+              Relevez le d&eacute;fi
+            </span>
+          </button>
+        </div>
+      </div>
 
 
       <div className={styles.reefLeft}>
@@ -68,15 +65,15 @@ const Home: NextPage = () => {
           <p>Plongez dans l&apos;intrigue et &eacute;lucidez le mystère enfui derrère le colis l&eacute;gu&eacute; en h&eacute;ritage par le professeur Angell et d&eacute;jouez le plan du culte !</p>
           {/* Mint a new NFT */}
           <button 
-          className={styles.newButton}
-          role="button"
-          onClick={() => router.push(`/mint`)}
+            className={styles.newButton}
+            role="button"
+            onClick={() => router.push(`/mint`)}
           >
-           <span>
-             MINT NOW
-            </span>
+          <span>
+            MINT NOW
+          </span>
           </button>
-          </div>
+        </div>
         </section>
         <h1 className={styles.titlesHome}>DREAM MAP</h1>
         <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>

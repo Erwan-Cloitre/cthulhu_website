@@ -1,35 +1,40 @@
 .logo{
   width: 200px;
 }
- 
-.landingImg2{
-  display: block;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(2,0,0,1) 100%);
-  z-index: 10000000;
+
+.containerLandingImg{
+  overflow: hidden;
+}
+
+.landingImg{
+  width: 100%;
+  height: auto;
 }
 
 .landingTitle {
-  font-size: 4vw;
+  font-size: 5vw;
   position: absolute;
-  top: 24vw;
+  top: 25vw;
   padding-left: 50px;
   text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
 }
 
 .landingText {
   font-family: 'arcane_nineregular';
-  font-size: 2vw;
+  font-size: 2.5vw;
   position: absolute;
-  top: 28vw;
+  text-align: start;
+  top: 30vw;
   padding-top: 30px;
   padding-left: 50px;
   text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+  max-width: 80%;
 }
 
 .landingButton{
   height: 60px;
   position: absolute;
-  top: 32vw;
+  top: 34vw;
   left: 0;
   margin-top: 40px;
   margin-left: 50px;
@@ -39,7 +44,7 @@
   color: black;
   border-radius: 40px;
   border: 2px solid black;
-  width: 20vw;
+  width: 335px;
   min-width: 230px;
   background: #fcd230;
   overflow: hidden;
@@ -551,13 +556,39 @@
   }
 }
 
+/* Under 700px */
 @media only screen and (max-width: 699px) {
-  .nftBoxGrid {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
+  .landingImg{
+    display: none;
+  }
+
+  .landingImgMobile{
+    width: 100vw;
+    height: 100%;
+  }
+
+  .landingBox{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .landingBox h1{
+    font-size: 8vw;
+    padding-left: 2vw;
+    top: 60vw;
+    text-align: start;
+  }
+
+  .landingBox p{
+    font-size: 5vw;
+    padding-left: 2vw;
+    top: 80vw;
+    text-align: start;
+  }
+
+  .landingBox button{
+    margin-left: 4vw;
+    top: 95vw;
   }
 
   .buttonBox{
@@ -566,13 +597,21 @@
   }
   
   .buttonBox h1{
-    font-size: 2.5rem;
+    font-size: 45px;
     line-height: 1;
   }
 
   .buttonBox p{
     padding: 10px;
     font-size: 1.3rem;
+  }
+
+  .nftBoxGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
   }
 
   .hiddenCthulhu{
@@ -593,41 +632,46 @@
   }
 }
 
+/* Above 700px */
 @media only screen and (min-width: 700px) {
-.nftBoxGrid {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10%;
-  flex-wrap: wrap;
-  z-index: 1;
-  padding-bottom: 50px;
-}
+  .landingImgMobile{
+    display: none;
+  }
+  
+  .nftBoxGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding-bottom: 50px;
+  }
 
-.buttonBox{
-  max-width: 35vw;
-  text-align: justify;
-}
+  .buttonBox{
+    max-width: 35vw;
+    text-align: justify;
+  }
 
-.buttonBox h1{
-  font-size: 4rem;
-}
+  .buttonBox h1{
+    font-size: 4rem;
+  }
 
-.buttonBox p{
-  font-size: 1.6rem;
-}
+  .buttonBox p{
+    font-size: 1.6rem;
+  }
 
-.hiddenCthulhu{
-  width: 40vw;
-  height: auto;
-  border-radius: 0.5rem;
-}
-.titlesHome{
-  font-size: 5rem;
-  padding: 10px;
-}
+  .hiddenCthulhu{
+    width: 40vw;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .titlesHome{
+    font-size: 5rem;
+    padding: 10px;
+  }
 }
 
 .nftBox {
@@ -1065,4 +1109,28 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*Landing page responsive*/
+/* Under 1100px */
+@media only screen and (max-width: 1100px) {
+  .landingTitle {
+  font-size: 5vw;
+  }
+  
+  .landingText {
+    font-size: 3vw;
+  }
+  
+  .landingButton{
+    margin-top: 50px;
+  }
+}
+/* Under 550px */
+@media only screen and (max-width: 550px) {
+  .landingText{
+    top: 75vw;
+    max-width: 100%;
+  }
+
 }

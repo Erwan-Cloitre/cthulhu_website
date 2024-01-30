@@ -7,7 +7,7 @@ const FooterStake = () => {
     src="/footer.png"
     layout="fill"
     objectFit="cover"
-    quality={100}
+    quality={80}
   /></div>
     
   );
