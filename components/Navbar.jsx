@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="HeaderBox">
-      <a href="/"><img className="NavbarLogo" src="https://zupimages.net/up/22/34/h5za.png" alt="logo" /></a>
+      <Link href="/"><img className="NavbarLogo" src="https://zupimages.net/up/22/34/h5za.png" alt="logo" /></Link>
       <nav ref={navRef}>
       <div className="NavbarLinkBox">
       <Link href="/">
