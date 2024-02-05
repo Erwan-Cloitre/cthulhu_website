@@ -24,14 +24,14 @@ const Navbar = () => {
   return (
     <header>
       <div className="HeaderBox">
-      <img className="NavbarLogo" src="https://zupimages.net/up/22/34/h5za.png" alt="logo" />
+      <a href="/"><img className="NavbarLogo" src="https://zupimages.net/up/22/34/h5za.png" alt="logo" /></a>
       <nav ref={navRef}>
       <div className="NavbarLinkBox">
       <Link href="/">
-        <a>Home</a>
+        <a onClick={showNavbar}>Home</a>
       </Link>
       <Link href="/mint">
-        <a>Mint</a>
+        <a onClick={showNavbar}>Mint</a>
       </Link>
       </div>
       <div className="HiddenIconsBox">

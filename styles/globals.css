@@ -79,6 +79,7 @@ header {
 }
 
 .NavbarLogo{
+  margin-top: 5px;
   width: 100px;
   height: 100px;
 }
@@ -237,7 +238,7 @@ header .nav-btn {
   header .responsive_nav{
     display: grid;
     transform: none;
-    z-index: 2;
+    z-index: 4;
     justify-items: center;
     align-items: center;
     height: 100%;
@@ -254,9 +255,12 @@ h2 {
 
 /* START FAQ */
 .faq {
+  z-index: 0;
+  position: relative;
   margin-top: 25px;
 }
 .answer p {
+  text-align: start;
   font-size: 1.7rem;
 }
 
@@ -288,6 +292,7 @@ h2 {
 	height: 30px;
 	z-index: 1;
   font-size: 2rem;
+  text-align: start;
 }
 #faq .toggle:checked ~ h3.question,
 #faq li:hover h3.question {
@@ -360,6 +365,18 @@ h2 {
 #faq .answer > p {
 	margin: 0;
 	text-align: justify;
+}
+
+/* Under 850px */
+@media only screen and (max-width: 850px) {
+  #faq h3.question {
+    font-size: 4vw;
+    text-align: start;
+  }
+
+  .answer p {
+    font-size: 3vw;
+  }
 }
 
 /* END FAQ */

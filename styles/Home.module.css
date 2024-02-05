@@ -1,3 +1,7 @@
+.containerHome{
+  min-width: 360px;
+}
+
 .logo{
   width: 200px;
 }
@@ -16,6 +20,7 @@
   position: absolute;
   top: 25vw;
   padding-left: 50px;
+  padding-right: 2vw;
   text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
 }
 
@@ -27,6 +32,7 @@
   top: 30vw;
   padding-top: 30px;
   padding-left: 50px;
+  padding-right: 2vw;
   text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
   max-width: 80%;
 }
