@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
