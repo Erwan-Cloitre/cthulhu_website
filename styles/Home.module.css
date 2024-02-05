@@ -1134,6 +1134,10 @@
 }
 /* Under 550px */
 @media only screen and (max-width: 550px) {
+  .landingTitle {
+    font-size: 7vw;
+    } 
+
   .landingText{
     top: 75vw;
     max-width: 100%;
