@@ -19,7 +19,6 @@
     "@thirdweb-dev/react": "^4.2.2",
     "@thirdweb-dev/sdk": "^4.0.25",
     "@vercel/analytics": "^0.1.5",
-    "@vercel/speed-insights": "^1.0.10",
     "ethers": "^5.7.0",
     "framer-motion": "^4.1.17",
     "next": "^12.1.6",
