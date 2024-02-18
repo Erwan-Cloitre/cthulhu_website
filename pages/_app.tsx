@@ -18,8 +18,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <html lang="en" />
       <title lang="en">Eternal Cthulhu</title>
       <link rel="canonical" href="http://www.eternalcthulhu.com" />
-      <meta name="description" content="Eternal Cthulhu is a NFT collection based on ethereum blockchain" />
-      <meta name="keywords" content="NFT, ETH, ETHEREUM, CTHULHU, ETERNAL, CRYPTO, MINT, STAKING, COLLECTION, OPENSEA"></meta>
+      <meta name="description" content="L'investigateur : le mythe de Cthulhu est un jeu d'enquête dans l'univers d'H.P Lovecraft, élucidez le mystère enfui derrère le colis légué en héritage par le professeur Angell." />
+      <meta name="keywords" content="NFT, ETH, ETHEREUM, CTHULHU, ETERNAL, GAME, INVESTIGATEUR, ESCAPE, ENQUETE, JEU, BOX, DETECTIVE"></meta>
       <meta name="author" content="@Pinpin.eth"></meta>
     </Helmet>
       <Navbar />
