@@ -1233,14 +1233,13 @@
 
 /* Under 392px */
 @media only screen and (max-width: 392px) {
+  .landingTitle {
+    top: 40vw;
+    } 
+
   .landingText{
     top: 90vw;
     max-width: 100%;
     font-size: 22px;
   } 
-
-  .landingBox button{
-    margin-left: 4vw;
-    top: 110vw;
-  }
-}
+ }
