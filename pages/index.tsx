@@ -9,6 +9,7 @@ import React from 'react'
 /*Images */
 import reefRight from '../public/waterAssets/reef-right.png';
 import hiddenCthulhu from '../public/img_detective-box-couv.jpg';
+import statue from '../public/waterAssets/statue.png';
 import fish from '../public/waterAssets/fish2.png';
 import collabIcon1 from '../public/collab/logo1.png';
 import collabIcon2 from '../public/collab/logo2.png';
@@ -75,8 +76,66 @@ const Home: NextPage = () => {
           </button>
         </div>
         </section>
+        {/* Roadmap SECTION */}
         <h1 className={styles.titlesHome}>DREAM MAP</h1>
+        <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
         <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
+        <div className={styles.waves}></div>
+        <section className={styles.timelineSection}>
+	<div className={styles.timelineItems}>
+		<div className={styles.timelineItem}>
+			<div className={styles.timelineDot}></div>
+			<div className={styles.timelineDate}>crowdfunding</div>
+			<div className={styles.timelineContent}>
+        <h3>Campagne Ulule</h3>
+				<p>Soyez parmi les premiers &agrave; soutenir le projet Eternal Cthuhu gr&acirc;ce au financement participatif.</p>
+        <button 
+            className={styles.buttonDreammap}
+            role="button"
+            onClick={() => router.push(`/mint`)}
+          >
+          <span>
+            lien Ulule
+          </span>
+          </button>
+			</div>
+		</div>
+		<div className={styles.timelineItem}>
+			<div className={styles.timelineDot}></div>
+			<div className={styles.timelineDate}>Pr&eacute;commande</div>
+			<div className={styles.timelineContent}>
+				<h3>collection nft</h3>
+        <p>937 tickets pour devenir membre du bureau priv&eacute; des investigateurs visionnaires.
+
+        </p>
+        <button 
+            className={styles.buttonDreammap}
+            role="button"
+            onClick={() => router.push(`/mint`)}
+          >
+          <span>
+            QUELS AVANTAGES ?
+          </span>
+          </button>
+			</div>
+		</div>
+		<div className={styles.timelineItem}>
+			<div className={styles.timelineDot}></div>
+			<div className={styles.timelineDate}>Lancement</div>
+			<div className={styles.timelineContent}>
+				<h3>Boutique en ligne</h3>
+				<p>L&apos;enqu&ecirc;te sera disponible pour tous, serez-vous &agrave; la hauteur ? </p>
+			</div>
+		</div>
+		<div className={styles.timelineItem}>
+			<div className={styles.timelineDot}></div>
+			<div className={styles.timelineDate}>&Agrave; venir... </div>
+			<div className={styles.timelineContent}>
+			</div>
+		</div>
+	</div>
+</section>
+        {/* Video SECTION */}
         <div className={styles.waves}></div>
         <section>
           <div className='player-wrapper'>

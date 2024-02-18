@@ -118,6 +118,17 @@
   z-index: -1;
 }
 
+.statuediv {
+  overflow: hidden;
+}
+
+.statue {
+  left: 0;
+  width: 50%;
+  position: absolute;
+  opacity: 0.90;
+}
+
 .fishRight{
   position: absolute;
   right: 15%;
@@ -207,6 +218,68 @@
 }
 
 .newButton:hover::after{
+  transform: translateX(50px) rotate(30deg);
+}
+
+/* Button dreammap */
+
+.buttonDreammap{
+  height: 60px;
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+  border-radius: 40px;
+  border: 2px solid black;
+  width: 20vw;
+  min-width: 230px;
+  position: relative;
+  background: #EDEDEF;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.buttonDreammap::before{
+  width: 0.625rem;
+  right: 38%;
+  content: " ";
+  height: 120px;
+  display: block;
+  top: -30px;
+  opacity: 0.3;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(30deg);
+  transition: all .2s;
+}
+
+.buttonDreammap::after{
+  width: 2.5rem;
+  right: 12%;
+  content: " ";
+  height: 120px;
+  background: #fff;
+  display: block;
+  top: -30px;
+  opacity: .3;
+  position: absolute;
+  transform: rotate(30deg);
+  transition: all .2s;
+  z-index: 1;
+}
+
+.buttonDreammap:hover{
+  background: #e84048;
+  transform: scale(1.1);
+}
+
+.buttonDreammap:hover::before{
+  transform: translateX(60px) rotate(30deg);
+}
+
+.buttonDreammap:hover::after{
   transform: translateX(50px) rotate(30deg);
 }
 
@@ -585,7 +658,7 @@
     text-align: start;
   }
 
-  .landingBox p{
+  .landingText{
     font-size: 5vw;
     padding-left: 2vw;
     top: 80vw;
@@ -594,7 +667,7 @@
 
   .landingBox button{
     margin-left: 4vw;
-    top: 95vw;
+    top: 100vw;
   }
 
   .buttonBox{
@@ -870,10 +943,18 @@
 .noGapBottom {
   margin-bottom: 0px;
 }
+@media only screen and (min-width: 1550px) {
+  .timelineSection{
+    min-height: 100vh;
+    padding: 50px 250px;
+  }
+}
 
-.timelineSection{
-	min-height: 100vh;
-	padding: 50px 15px;
+@media only screen and (max-width: 1549px) {
+  .timelineSection{
+    min-height: 100vh;
+    padding: 50px 25px;
+  }
 }
 .timelineItems{
 	max-width: 90vw;
@@ -1135,12 +1216,18 @@
 /* Under 550px */
 @media only screen and (max-width: 550px) {
   .landingTitle {
-    font-size: 7vw;
+    font-size: 35px;
     } 
 
   .landingText{
-    top: 75vw;
+    top: 80vw;
     max-width: 100%;
+    font-size: 22px;
+  }
+
+  .landingButton{
+    font-size: 7vw;
+    width: 280px;
   }
 
 }
