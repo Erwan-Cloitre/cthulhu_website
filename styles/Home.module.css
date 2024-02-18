@@ -1234,6 +1234,6 @@
 /* Under 392px */
 @media only screen and (max-width: 392px) {
   .landingTitle {
-    top: 46vw;
+    top: 40vw;
     } 
 }
