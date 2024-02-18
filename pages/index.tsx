@@ -78,7 +78,6 @@ const Home: NextPage = () => {
         </section>
         {/* Roadmap SECTION */}
         <h1 className={styles.titlesHome}>DREAM MAP</h1>
-        <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
         <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
         <div className={styles.waves}></div>
         <section className={styles.timelineSection}>
@@ -106,7 +105,6 @@ const Home: NextPage = () => {
 			<div className={styles.timelineContent}>
 				<h3>collection nft</h3>
         <p>937 tickets pour devenir membre du bureau priv&eacute; des investigateurs visionnaires.
-
         </p>
         <button 
             className={styles.buttonDreammap}
@@ -117,6 +115,7 @@ const Home: NextPage = () => {
             QUELS AVANTAGES ?
           </span>
           </button>
+          <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
 			</div>
 		</div>
 		<div className={styles.timelineItem}>

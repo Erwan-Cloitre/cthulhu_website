@@ -119,13 +119,12 @@
 }
 
 .statuediv {
-  overflow: hidden;
+  position: absolute;
 }
 
 .statue {
-  left: 0;
-  width: 50%;
-  position: absolute;
+  margin-left: 30%;
+  width: 80%;
   opacity: 0.90;
 }
 
@@ -226,7 +225,7 @@
 .buttonDreammap{
   height: 60px;
   margin-top: 50px;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 600;
   color: black;
   border-radius: 40px;
@@ -676,7 +675,7 @@
   }
   
   .buttonBox h1{
-    font-size: 45px;
+    font-size: 42px;
     line-height: 1.2;
   }
 
@@ -693,11 +692,15 @@
     align-items: center;
   }
 
+  .reefRight{
+    padding-top: 400px;
+   }
+
   .hiddenCthulhu{
-    width: 200px;
+    width: 90%;
     border-radius: 0.5rem;
   }
-
+  
   .newButton{
     margin: 20px 0;
     width: 200px;
@@ -739,9 +742,10 @@
   }
 
   .buttonBox p{
-    font-size: 1.6rem;
+    font-size: 28px;
+    color: #C8C8C8;
   }
-
+ 
   .hiddenCthulhu{
     width: 40vw;
     height: auto;
@@ -1005,7 +1009,7 @@
 	padding: 30px;
 }
 .timelineContent h3{
-  font-size: 3rem;
+  font-size: 42px;
 	color: #ffffff;
 	margin:0 0 10px;
 	text-transform: capitalize;
@@ -1014,7 +1018,7 @@
 }
 .timelineContent p{
     color: #c8c8c8;
-	font-size: 2rem;
+	font-size: 28px;
 	font-weight: 300;
 	line-height: 2rem;
 }
@@ -1035,6 +1039,9 @@
 	.timelineDot{
 		left:0;
 	}
+  .timelineContent{
+    padding: 0px;
+  }
 }
 
 /* START TEAM CSS CARD */
