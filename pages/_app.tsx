@@ -4,7 +4,6 @@ import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // This is the chainId your dApp will work on.
 const activeChain = "mumbai";
@@ -26,8 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       <Component {...pageProps} />
       <Analytics />
-      <SpeedInsights/>
-    </ThirdwebProvider>
+      </ThirdwebProvider>
   );
 }
 
