@@ -106,6 +106,7 @@ const Home: NextPage = () => {
 				<h3>collection nft</h3>
         <p>937 tickets pour devenir membre du bureau priv&eacute; des investigateurs visionnaires.
         </p>
+        <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
         <button 
             className={styles.buttonDreammap}
             role="button"
@@ -115,7 +116,6 @@ const Home: NextPage = () => {
             QUELS AVANTAGES ?
           </span>
           </button>
-          <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
 			</div>
 		</div>
 		<div className={styles.timelineItem}>
