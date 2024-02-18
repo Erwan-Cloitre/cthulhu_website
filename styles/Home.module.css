@@ -1216,13 +1216,13 @@
 /* Under 550px */
 @media only screen and (max-width: 550px) {
   .landingTitle {
-    font-size: 35px;
+    font-size: 8.5vw;
     } 
 
   .landingText{
     top: 80vw;
     max-width: 100%;
-    font-size: 22px;
+    font-size: 6vw;
   }
 
   .landingButton{
@@ -1234,7 +1234,7 @@
 /* Under 392px */
 @media only screen and (max-width: 420px) {
   .landingTitle {
-    font-size: 38px;
+    font-size: 40px;
   } 
 
   .landingText{
@@ -1244,6 +1244,6 @@
   } 
 
   .landingBox button{
-    top: 110vw;
+    top: 108vw;
   }
  }
