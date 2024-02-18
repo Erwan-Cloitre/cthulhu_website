@@ -26,7 +26,7 @@ body {
   min-width: 350px;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.2;
   background: linear-gradient(to right top, #016086, #005781, #044d7b, #0e4474, #163a6c) fixed;
   font-family: 'arcane_nineregular';
   color: var(--white);
@@ -369,15 +369,30 @@ h2 {
 /* Under 850px */
 @media only screen and (max-width: 850px) {
   #faq h3.question {
-    font-size: 4vw;
+    font-size: 4.1vw;
     text-align: start;
   }
 
   .answer p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
+/* Under 525px */
+@media only screen and (max-width: 525px) {
+  #faq h3.question {
+    width:95%;
+    font-size: 27px;
+    text-align: start;
+  }
 
+  .answer p {
+    font-size: 20px;
+  }
+
+  #faq .border {
+    height: 80px;
+}
+}
 /* END FAQ */
 
 .swiper {

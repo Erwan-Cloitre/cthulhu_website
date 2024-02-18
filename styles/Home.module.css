@@ -677,7 +677,7 @@
   
   .buttonBox h1{
     font-size: 45px;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .buttonBox p{
@@ -1229,5 +1229,11 @@
     font-size: 7vw;
     width: 280px;
   }
+}
 
+/* Under 392px */
+@media only screen and (max-width: 392px) {
+  .landingTitle {
+    top: 46vw;
+    } 
 }
