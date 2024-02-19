@@ -731,7 +731,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
     flex-wrap: wrap;
     z-index: 1;
     padding-bottom: 50px;
@@ -752,7 +752,7 @@
   }
  
   .hiddenCthulhu{
-    width: 40vw;
+    width: 45vw;
     height: auto;
     border-radius: 0.5rem;
   }
