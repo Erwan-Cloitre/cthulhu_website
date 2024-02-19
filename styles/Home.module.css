@@ -680,8 +680,9 @@
   }
 
   .buttonBox p{
+    color: #C8C8C8;
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 23px;
   }
 
   .nftBoxGrid {
@@ -711,6 +712,10 @@
     font-size: 3rem;
     padding: 10px;
     width: 100%;
+  }
+
+  .buttonDreammap{
+    font-size: 28px;
   }
 }
 
@@ -1042,8 +1047,13 @@
   .timelineContent{
     padding: 0px;
   }
+  .timelineContent p{
+	font-size: 23px;
 }
-
+.timelineContent h3{
+  font-size: 36px;
+}
+}
 /* START TEAM CSS CARD */
 
 .sectionTeam{
@@ -1218,6 +1228,17 @@
   
   .landingButton{
     margin-top: 50px;
+  }
+  .nftBoxGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+  .buttonBox{
+    max-width: 80%;
+    text-align: center;
   }
 }
 /* Under 550px */

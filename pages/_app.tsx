@@ -15,8 +15,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
     >
       <Helmet>
-      <html lang="en" />
-      <title lang="en">Eternal Cthulhu</title>
+      <html lang="fr" />
+      <title lang="fr">Eternal Cthulhu</title>
       <link rel="canonical" href="http://www.eternalcthulhu.com" />
       <meta name="description" content="L'investigateur : le mythe de Cthulhu est un jeu d'enquête dans l'univers d'H.P Lovecraft, élucidez le mystère enfui derrère le colis légué en héritage par le professeur Angell." />
       <meta name="keywords" content="NFT, ETH, ETHEREUM, CTHULHU, ETERNAL, GAME, INVESTIGATEUR, ESCAPE, ENQUETE, JEU, BOX, DETECTIVE"></meta>
