@@ -224,14 +224,14 @@
 
 .buttonDreammap{
   height: 60px;
-  margin-top: 50px;
+  margin-top: 25px;
   font-size: 30px;
   font-weight: 600;
   color: black;
   border-radius: 40px;
   border: 2px solid black;
   width: 20vw;
-  min-width: 230px;
+  min-width: 250px;
   position: relative;
   background: #EDEDEF;
   overflow: hidden;
