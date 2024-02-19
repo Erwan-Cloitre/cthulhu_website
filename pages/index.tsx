@@ -8,7 +8,7 @@ import Image from 'next/image'
 import React from 'react'
 /*Images */
 import reefRight from '../public/waterAssets/reef-right.png';
-import hiddenCthulhu from '../public/img_detective-box-couv.jpg';
+import hiddenCthulhu from '../public/img_detective-box-couv.webp';
 import statue from '../public/waterAssets/statue.png';
 import fish from '../public/waterAssets/fish2.png';
 import collabIcon1 from '../public/collab/logo1.png';
@@ -27,8 +27,8 @@ const Home: NextPage = () => {
       {/* Top Section */}
       <div>
         <div className={styles.containerLandingImg}>
-          <img className={styles.landingImg} src="/bg-city.png" alt="" />
-          <img className={styles.landingImgMobile} src="/bg-city-mobile2.png" alt="" />
+          <img className={styles.landingImg} src="/bg-city.webp" alt="" />
+          <img className={styles.landingImgMobile} src="/bg-city-mobile2.webp" alt="" />
         </div>
         <div className={styles.landingBox}>
           <h1 className={styles.landingTitle}>D&eacute;couvrez l&apos;investigateur en vous</h1>

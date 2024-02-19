@@ -42,7 +42,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.webp`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin<br/><span>Founder</span></h3>
@@ -65,7 +65,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.webp`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Guigz<br/><span>Founder</span></h3>
@@ -88,7 +88,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.webp`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin3<br/><span>Founder</span></h3>
@@ -111,7 +111,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.webp`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin4<br/><span>Founder</span></h3>
@@ -134,7 +134,7 @@ const ArtistSection = () => {
               <div className={styles.card}>
                 <div className={styles.content}>
                   <div className={styles.imgBox}>
-                    <img className={styles.hiddenCthulhu} src={`/hidden.jpg`} alt="Team pic"/>
+                    <img className={styles.hiddenCthulhu} src={`/hidden.webp`} alt="Team pic"/>
                   </div>
                     <div className={styles.contentBox}>
                       <h3>Pinpin5<br/><span>Founder</span></h3>

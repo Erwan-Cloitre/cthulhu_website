@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <div className="footerHomeContainer"><Image
     alt="Footer"
-    src='/footer.png'
+    src='/footer.webp'
     layout="responsive"
     width={3840}
     height={2160}

@@ -3,7 +3,7 @@ const FooterMint = () => {
   return (
       <div className="FooterStakeWrap"><Image
     alt="Footer"
-    src='/footer.png'
+    src='/footer.webp'
     layout="responsive"
     width={3839}
     height={2160}
