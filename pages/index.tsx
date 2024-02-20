@@ -63,7 +63,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.buttonBox}>
           <h1>L&apos;investigateur : le mythe de Cthulhu</h1>
-          <p>Plongez dans l&apos;intrigue et &eacute;lucidez le mystère enfui derrère le colis l&eacute;gu&eacute; en h&eacute;ritage par le professeur Angell et d&eacute;jouez le plan du culte !</p>
+          <p>Plongez dans l&apos;intrigue et &eacute;lucidez le mystère enfoui derrière le colis l&eacute;gu&eacute; en h&eacute;ritage par le professeur Angell et d&eacute;jouez le plan du culte !</p>
           {/* Mint a new NFT */}
           <button 
             className={styles.newButton}
@@ -78,6 +78,7 @@ const Home: NextPage = () => {
         </section>
         {/* Roadmap SECTION */}
         <h1 className={styles.titlesHome}>DREAM MAP</h1>
+        <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
         <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
         <div className={styles.waves}></div>
         <section className={styles.timelineSection}>
@@ -106,7 +107,6 @@ const Home: NextPage = () => {
 				<h3>collection nft</h3>
         <p>937 tickets pour devenir membre du bureau priv&eacute; des investigateurs visionnaires.
         </p>
-        <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
         <button 
             className={styles.buttonDreammap}
             role="button"

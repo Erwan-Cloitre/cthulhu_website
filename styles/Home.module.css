@@ -119,7 +119,10 @@
 }
 
 .statuediv {
+  top: 80vw;
+  padding-left: 50vw;
   position: absolute;
+  z-index: -1;
 }
 
 .statue {
@@ -636,50 +639,50 @@
 
 /* Under 700px */
 @media only screen and (max-width: 699px) {
-  .landingImg{
+  .landingImg {
     display: none;
   }
 
-  .landingImgMobile{
+  .landingImgMobile {
     width: 100vw;
     height: 100%;
   }
 
-  .landingBox{
+  .landingBox {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .landingTitle{
+  .landingTitle {
     font-size: 8vw;
     padding-left: 2vw;
     top: 60vw;
     text-align: start;
   }
 
-  .landingText{
+  .landingText {
     font-size: 5vw;
     padding-left: 2vw;
     top: 80vw;
     text-align: start;
   }
 
-  .landingBox button{
+  .landingBox button {
     margin-left: 4vw;
     top: 100vw;
   }
 
-  .buttonBox{
+  .buttonBox {
     width: 100%;
     min-width: 250px;
   }
   
-  .buttonBox h1{
+  .buttonBox h1 {
     font-size: 40px;
     line-height: 1.2;
   }
 
-  .buttonBox p{
+  .buttonBox p {
     color: #C8C8C8;
     padding: 10px;
     font-size: 23px;
@@ -693,28 +696,28 @@
     align-items: center;
   }
 
-  .reefRight{
+  .reefRight {
     padding-top: 400px;
    }
 
-  .hiddenCthulhu{
+  .hiddenCthulhu {
     width: 90%;
     border-radius: 0.5rem;
   }
   
-  .newButton{
+  .newButton {
     margin: 20px 0;
     width: 200px;
     z-index: 1;
   }
 
-  .titlesHome{
+  .titlesHome {
     font-size: 3rem;
     padding: 10px;
     width: 100%;
   }
 
-  .buttonDreammap{
+  .buttonDreammap {
     font-size: 26px;
   }
 }
@@ -795,6 +798,58 @@
   margin-top: 0px;
 }
 
+/* Between 1400 and 1200 */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .statue {
+    margin-top: 130px;
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+/* Between 1200 and 1000 */
+@media only screen and (min-width: 1000px) and (max-width: 1199px) {
+  .statue {
+    margin-top: 300px;
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+/* Between 1000 and 700px */
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  .statue {
+    margin-top: 500px;
+    margin-left: 10%;
+    width: 90%;
+  }
+}
+
+/* Between 699 and 800 */
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .statuediv {
+    left: 0;
+    padding-left: 30vw;
+  }
+  .statue {
+    margin-top: 1750px;
+    width: 55vw;
+  }
+}
+/* under 499 */
+@media only screen and (max-width: 499px) {
+  .statuediv {
+    left: 0;
+    padding-left: 30vw;
+  }
+  .statue {
+    margin-top: 2000px;
+    width: 55vw;
+  }
+  .timelineSection{
+    margin-bottom: 80px;
+  }
+}
 /* Between 1200 and 800 */
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   .nftBox {
@@ -959,11 +1014,12 @@
   }
 }
 
+.timelineSection{
+  min-height: 100vh;
+  padding: 50px 25px;
+}
+
 @media only screen and (max-width: 1549px) {
-  .timelineSection{
-    min-height: 100vh;
-    padding: 50px 25px;
-  }
 }
 .timelineItems{
 	max-width: 90vw;
@@ -1048,6 +1104,7 @@
     padding: 0px;
   }
   .timelineContent p{
+    padding: 10px;
 	font-size: 23px;
 }
 .timelineContent h3{
