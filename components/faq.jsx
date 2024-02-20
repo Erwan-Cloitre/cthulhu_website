@@ -4,7 +4,7 @@ const Faq = () => {
 				<ol className="faq">
 					<li>
 						<input type="checkbox" className="toggle"/>
-						<h3 className="question">C&apos;est quoi &quot;L&apos;investigateur : le mythe de Cthulhu&quot; ?</h3>
+						<h3 className="question">C&apos;est quoi &quot;L&apos;investigateur : Eternal Cthulhu&quot; ?</h3>
 						<div className="icon"></div>
 						<div className="border"></div>
 						<div className="answer">

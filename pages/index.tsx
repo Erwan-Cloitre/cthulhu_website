@@ -62,7 +62,7 @@ const Home: NextPage = () => {
             <img className={styles.hiddenCthulhu} src={hiddenCthulhu.src} alt="hiddenCthulhu" />
         </div>
         <div className={styles.buttonBox}>
-          <h1>L&apos;investigateur : le mythe de Cthulhu</h1>
+          <h1>L&apos;investigateur : Eternal Cthulhu</h1>
           <p>Plongez dans l&apos;intrigue et &eacute;lucidez le mystère enfoui derrière le colis l&eacute;gu&eacute; en h&eacute;ritage par le professeur Angell et d&eacute;jouez le plan du culte !</p>
           {/* Mint a new NFT */}
           <button 
@@ -79,7 +79,6 @@ const Home: NextPage = () => {
         {/* Roadmap SECTION */}
         <h1 className={styles.titlesHome}>DREAM MAP</h1>
         <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
-        <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
         <div className={styles.waves}></div>
         <section className={styles.timelineSection}>
 	<div className={styles.timelineItems}>
@@ -179,6 +178,7 @@ const Home: NextPage = () => {
       </section>
       {/* END COLLAB SECTION */}
       <h1 className={styles.titlesHome}>FREQUENTLY ASKED QUESTIONS</h1>
+      <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
       <Faq />
       <Footer />
     </div>
