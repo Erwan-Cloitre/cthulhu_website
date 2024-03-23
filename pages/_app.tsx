@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <html lang="fr" />
       <title lang="fr">Eternal Cthulhu | Jeu d'enquête immersif</title>
       <link rel="canonical" href="http://www.eternalcthulhu.com" />
-      <meta name="description" content="Jeu d'enquête dans l'univers d'H.P Lovecraft, élucidez le mystère enfoui derrière un colis légué en héritage en déchiffrant une mystérieuse statue"/>
+      <meta name="description" content="Jeu d'enquête dans l'univers d'H.P Lovecraft, élucidez le mystère enfoui derrière un colis légué en héritage"/>
       <meta name="keywords" content="CTHULHU, ETERNAL, GAME, INVESTIGATEUR, ESCAPE, ENQUETE, JEU, BOX, DETECTIVE"></meta>
       <meta name="author" content="@Pinpin.eth"></meta>
     </Helmet>
