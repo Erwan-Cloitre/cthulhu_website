@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import ArtistSection from "../components/ArtistSection";
 import Faq from "../components/faq";
-import Footer from "../components/Footer";
 import Image from 'next/image'
 import React from 'react'
 /*Images */
@@ -180,7 +179,10 @@ const Home: NextPage = () => {
       <h1 className={styles.titlesHome}>FREQUENTLY ASKED QUESTIONS</h1>
       <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
       <Faq />
-      <Footer />
+      <div className={styles.containerFooterImg}>
+        <img className={styles.footerImg} src="/footer.webp" alt="" />
+        <img className={styles.footerImgMobile} src="/footerMobile.webp" alt="" />
+      </div>  
     </div>
   );
 };

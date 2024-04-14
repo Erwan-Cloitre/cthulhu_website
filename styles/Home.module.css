@@ -10,9 +10,20 @@
   overflow: hidden;
 }
 
+.containerFooterImg{
+  overflow: hidden;
+}
+
 .landingImg{
   width: 100%;
   height: auto;
+}
+
+.footerImg{
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  position: flex;
 }
 
 .landingTitle {
@@ -643,7 +654,16 @@
     display: none;
   }
 
+  .footerImg {
+    display: none;
+  }
+
   .landingImgMobile {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .footerImgMobile {
     width: 100vw;
     height: 100%;
   }
@@ -728,6 +748,10 @@
     display: none;
   }
   
+  .footerImgMobile{
+    display: none;
+  }
+
   .nftBoxGrid {
     width: 100%;
     display: flex;
