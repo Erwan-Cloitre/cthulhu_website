@@ -102,13 +102,12 @@ const Home: NextPage = () => {
 			<div className={styles.timelineDot}></div>
 			<div className={styles.timelineDate}>Pr&eacute;commande</div>
 			<div className={styles.timelineContent}>
-				<h3>collection nft</h3>
-        <p>937 tickets pour devenir membre du bureau priv&eacute; des investigateurs visionnaires.
-        </p>
+				<h3>en cours..</h3>
+        <p>en cours..</p>
         <button 
             className={styles.buttonDreammap}
             role="button"
-            onClick={() => router.push(`/mint`)}
+            onClick={() => router.push(`/`)}
           >
           <span>
             QUELS AVANTAGES ?
@@ -148,34 +147,6 @@ const Home: NextPage = () => {
             />
           </div>
         </section>
-{/* TEAM SECTION */}
-<h1 className={styles.titlesHome}>MEET THE TEAM</h1>
-<div className={styles.waves2}></div>
-<ArtistSection />
-{/* START COLLAB SECTION */}
-<section className={styles.collabBox}>
-        <div className={styles.collabIcon}>
-        <a href="#">
-          <img src={collabIcon1.src} alt="Collab icon"/>
-        </a>
-        </div>
-        <div className={styles.collabIcon}>
-        <a href="#">
-          <img src={collabIcon2.src} alt="Collab icon"/>
-        </a>
-        </div>
-        <div className={styles.collabIcon}>
-        <a href="#">
-          <img src={collabIcon3.src} alt="Collab icon"/>
-        </a>
-        </div>
-        <div className={styles.collabIcon}>
-        <a href="#">
-          <img src={collabIcon4.src} alt="Collab icon"/>
-        </a>
-        </div>
-      </section>
-      {/* END COLLAB SECTION */}
       <h1 className={styles.titlesHome}>FREQUENTLY ASKED QUESTIONS</h1>
       <div><img className={styles.fishRight} src={fish.src} alt="drop" /></div>
       <Faq />

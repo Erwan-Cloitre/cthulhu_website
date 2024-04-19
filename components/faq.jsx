@@ -22,11 +22,11 @@ const Faq = () => {
 					</li>
 					<li>
 						<input type="checkbox" className="toggle"/>
-						<h3 className="question">Quel lien avec les NFT ?</h3>
+						<h3 className="question">En cours...</h3>
 						<div className="icon"></div>
 						<div className="border"></div>
 						<div className="answer">
-							<p>Pour ceux qui le souhaite, il est possible d&apos;acqu&eacute;rir la boîte via un NFT. Cela permet de l&apos;avoir en pr&eacute;commande, des cadeaux en plus dans le colis et des r&eacute;ductions sur les prochaines enqu&ecirc;tes.</p>
+							<p>En cours...</p>
 						</div>
 					</li>
 				</ol>

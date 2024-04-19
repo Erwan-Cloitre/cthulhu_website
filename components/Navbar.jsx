@@ -30,8 +30,11 @@ const Navbar = () => {
       <Link href="/">
         <a onClick={showNavbar}>Home</a>
       </Link>
-      <Link href="/mint">
-        <a onClick={showNavbar}>Mint</a>
+      <Link href="/">
+        <a onClick={showNavbar}>Ulule</a>
+      </Link>
+      <Link href="/">
+        <a onClick={showNavbar}>Faq</a>
       </Link>
       </div>
       <div className="HiddenIconsBox">

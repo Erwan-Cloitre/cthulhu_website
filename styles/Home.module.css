@@ -22,8 +22,8 @@
 .footerImg{
   width: 100%;
   height: auto;
-  bottom: 0;
-  position: flex;
+  top: 10px;
+  position: relative;
 }
 
 .landingTitle {
@@ -666,6 +666,8 @@
   .footerImgMobile {
     width: 100vw;
     height: 100%;
+    top: 10px;
+    position: relative;
   }
 
   .landingBox {
@@ -703,7 +705,7 @@
   }
 
   .buttonBox p {
-    color: #C8C8C8;
+    color: #e3e3e3;
     padding: 10px;
     font-size: 23px;
   }
@@ -766,7 +768,7 @@
 
   .buttonBox{
     max-width: 35vw;
-    text-align: justify;
+    text-align: left;
   }
 
   .buttonBox h1{
@@ -774,8 +776,13 @@
   }
 
   .buttonBox p{
+    margin-top: 25px;
     font-size: 28px;
-    color: #C8C8C8;
+    color: #e3e3e3;
+  }
+
+  .buttonBox .newButton{
+    margin-top: 35px;
   }
  
   .hiddenCthulhu{
