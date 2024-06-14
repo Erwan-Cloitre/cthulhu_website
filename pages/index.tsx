@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             onClick={() => router.push(`/mint`)}
           >
           <span>
-            MINT NOW
+            ULULE
           </span>
           </button>
         </div>
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
             <img className={styles.ico} src={pocketwatch.src} alt="" />
             <p>
               2H00 &agrave; 4H00<br/>
-              D'ENQU&Ecirc;TE, SELON<br/>
+              D&apos;ENQU&Ecirc;TE, SELON<br/>
               VOS TALENTS<br/>
               D&apos;INVESTIGATEUR
             </p>
