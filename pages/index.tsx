@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
-import ArtistSection from "../components/ArtistSection";
 import Faq from "../components/faq";
 import Image from 'next/image'
 import React from 'react'
@@ -10,10 +9,9 @@ import reefRight from '../public/waterAssets/reef-right.png';
 import hiddenCthulhu from '../public/img_detective-box-couv.webp';
 import statue from '../public/waterAssets/statue.png';
 import fish from '../public/waterAssets/fish2.png';
-import collabIcon1 from '../public/collab/logo1.png';
-import collabIcon2 from '../public/collab/logo2.png';
-import collabIcon3 from '../public/collab/logo3.png';
-import collabIcon4 from '../public/collab/logo4.webp';
+import pocketwatch from '../public/pocketwatch.png';
+import age from '../public/age.png';
+import cultiste from '../public/cultiste.png';
 import dynamic from 'next/dynamic'
 
 const Home: NextPage = () => {
@@ -62,7 +60,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.buttonBox}>
           <h1>L&apos;investigateur : Eternal Cthulhu</h1>
-          <p>Plongez dans l&apos;intrigue et &eacute;lucidez le mystère enfoui derrière le colis l&eacute;gu&eacute; en h&eacute;ritage par le professeur Angell et d&eacute;jouez le plan du culte !</p>
+          <p>Plongez dans l&apos;intrigue autour du myst&eacute;rieux colis laiss&eacute; en h&eacute;ritage par le professeur Angell. D&eacute;cryptez l&apos;&eacute;nigmatique statue qu&apos;il renferme et r&eacute;v&eacute;lez ses secrets !</p>
           {/* Mint a new NFT */}
           <button 
             className={styles.newButton}
@@ -75,62 +73,67 @@ const Home: NextPage = () => {
           </button>
         </div>
         </section>
-        {/* Roadmap SECTION */}
-        <h1 className={styles.titlesHome}>DREAM MAP</h1>
+        {/* Concept SECTION */}
+        <section>
+          <div className={styles.responsiveThreeColumnGrid}>
+            <div>
+            <img className={styles.ico} src={pocketwatch.src} alt="" />
+            <p>
+              2H00 &agrave; 4H00<br/>
+              D'ENQU&Ecirc;TE, SELON<br/>
+              VOS TALENTS<br/>
+              D&apos;INVESTIGATEUR
+            </p>
+            </div>
+            <div>
+              <img className={styles.ico} src={cultiste.src} alt="" />
+              <p>
+              SEUL OU &Agrave;<br/>
+              PLUSIEURS, C&apos;EST<br/>
+              VOUS QUI<br/>
+              CHOISSISSEZ
+              </p>  
+            </div>
+            <div>
+            <img className={styles.ico} src={age.src} alt="" />
+              <p>
+                NOTRE ENQU&Ecirc;TE<br/>
+                EST<br/>
+                RECOMMAND&Eacute;E &Agrave;<br/>
+                PARTIR DE 14 ANS
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* FIN Concept SECTION */}
+        {/* Concept SECTION */}
+        <h1 className={styles.titlesHome}>Concept du jeu</h1>
         <div className={styles.statuediv}><img className={styles.statue} src={statue.src} alt="drop" /></div>
         <div className={styles.waves}></div>
         <section className={styles.timelineSection}>
-	<div className={styles.timelineItems}>
-		<div className={styles.timelineItem}>
-			<div className={styles.timelineDot}></div>
-			<div className={styles.timelineDate}>crowdfunding</div>
-			<div className={styles.timelineContent}>
-        <h3>Campagne Ulule</h3>
-				<p>Soyez parmi les premiers &agrave; soutenir le projet Eternal Cthuhu gr&acirc;ce au financement participatif.</p>
-        <button 
-            className={styles.buttonDreammap}
-            role="button"
-            onClick={() => router.push(`/mint`)}
-          >
-          <span>
-            lien Ulule
-          </span>
-          </button>
-			</div>
-		</div>
-		<div className={styles.timelineItem}>
-			<div className={styles.timelineDot}></div>
-			<div className={styles.timelineDate}>Pr&eacute;commande</div>
-			<div className={styles.timelineContent}>
-				<h3>en cours..</h3>
-        <p>en cours..</p>
-        <button 
-            className={styles.buttonDreammap}
-            role="button"
-            onClick={() => router.push(`/`)}
-          >
-          <span>
-            QUELS AVANTAGES ?
-          </span>
-          </button>
-			</div>
-		</div>
-		<div className={styles.timelineItem}>
-			<div className={styles.timelineDot}></div>
-			<div className={styles.timelineDate}>Lancement</div>
-			<div className={styles.timelineContent}>
-				<h3>Boutique en ligne</h3>
-				<p>L&apos;enqu&ecirc;te sera disponible pour tous, serez-vous &agrave; la hauteur ? </p>
-			</div>
-		</div>
-		<div className={styles.timelineItem}>
-			<div className={styles.timelineDot}></div>
-			<div className={styles.timelineDate}>&Agrave; venir... </div>
-			<div className={styles.timelineContent}>
-			</div>
-		</div>
-	</div>
-</section>
+          <div>
+            
+          </div>
+          <div className={styles.conceptBox}>
+            <p>
+            Vivez la c&eacute;l&egrave;bre histoire d&apos;HP Lovecraft.<br/>
+            Plus qu&apos;un escape game &agrave; la maison,<br/>
+            une v&eacute;ritable enqu&ecirc;te immersive.<br/>
+            Aucun r&egrave;glement, juste votre instinct.
+            </p>
+            <p>
+            Dans la bo&icirc;te :<br/>
+            - 1 antique statue<br/>
+            - 17 documents r&eacute;alistes<br/>
+            - 1 bloc-notes<br/>
+            Tout ce dont vous avez besoin<br/>
+            pour d&eacute;couvrir la v&eacute;rit&eacute; !
+            </p>
+            <p>
+            Parcourez les archives, d&eacute;chiffrez des codes secrets et suivez les indices diss&eacute;min&eacute;s dans chaque document pour lever le voile sur l&apos;&eacute;trange idole ancestrale.
+            </p>
+          </div>
+        </section>
         {/* Video SECTION */}
         <div className={styles.waves}></div>
         <section>

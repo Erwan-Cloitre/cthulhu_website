@@ -130,7 +130,7 @@
 }
 
 .statuediv {
-  top: 80vw;
+  top: 100vw;
   padding-left: 50vw;
   position: absolute;
   z-index: -1;
@@ -707,7 +707,7 @@
   .buttonBox p {
     color: #e3e3e3;
     padding: 10px;
-    font-size: 23px;
+    font-size: 26px;
   }
 
   .nftBoxGrid {
@@ -767,7 +767,7 @@
   }
 
   .buttonBox{
-    max-width: 35vw;
+    max-width: 40vw;
     text-align: left;
   }
 
@@ -777,8 +777,8 @@
 
   .buttonBox p{
     margin-top: 25px;
-    font-size: 28px;
-    color: #e3e3e3;
+    font-size: 35px;
+    color: white;
   }
 
   .buttonBox .newButton{
@@ -876,9 +876,6 @@
   .statue {
     margin-top: 1950px;
     width: 55vw;
-  }
-  .timelineSection{
-    margin-bottom: 80px;
   }
 }
 /* Between 1200 and 800 */
@@ -1038,110 +1035,7 @@
 .noGapBottom {
   margin-bottom: 0px;
 }
-@media only screen and (min-width: 1550px) {
-  .timelineSection{
-    min-height: 100vh;
-    padding: 50px 250px;
-  }
-}
 
-.timelineSection{
-  min-height: 100vh;
-  padding: 50px 25px;
-}
-
-@media only screen and (max-width: 1549px) {
-}
-.timelineItems{
-	max-width: 90vw;
-	margin:auto;
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-}
-.timelineItems::before{
-	content: '';
-	position: absolute;
-	width: 2px;
-	height: 100%;
-	background-color: #2f363e;
-	left: calc(50% - 1px);
-}
-.timelineItem{
-	margin-bottom: 40px;
-	width: 100%;
-	position: relative;
-}
-.timelineItem:last-child{
-	margin-bottom: 0;
-}
-.timelineItem:nth-child(odd){
-  padding-right: calc(50% + 30px);
-	text-align: right;
-}
-.timelineItem:nth-child(even){
-    padding-left: calc(50% + 30px);
-    text-align: left;
-}
-.timelineDot{
-	height: 16px;
-	width: 16px;
-	background-color: #fcd230;
-	position: absolute;
-	left: calc(50% - 8px);
-	border-radius: 50%;
-	top:1rem;
-}
-.timelineDate{
-	font-size: 2rem;
-	color: #fcd230;
-	margin:0 0 15px;
-}
-.timelineContent{
-	padding: 30px;
-}
-.timelineContent h3{
-  font-size: 42px;
-	color: #ffffff;
-	margin:0 0 10px;
-	text-transform: capitalize;
-	font-weight: 500;
-  line-height: 2.5rem;
-}
-.timelineContent p{
-    color: #c8c8c8;
-	font-size: 28px;
-	font-weight: 300;
-	line-height: 2rem;
-}
-
-/* responsive */
-@media(max-width: 767px){
-	.timelineItems::before{
-		left: 7px;
-	}
-	.timelineItem:nth-child(odd){
-		padding-right: 0;
-		text-align: left;
-	}
-	.timelineItem:nth-child(odd),
-	.timelineItem:nth-child(even){
-		padding-left: 37px;
-	}
-	.timelineDot{
-		left:0;
-	}
-  .timelineContent{
-    padding: 0px;
-  }
-  .timelineContent p{
-    padding: 10px;
-	font-size: 23px;
-}
-.timelineContent h3{
-  font-size: 36px;
-}
-}
 /* START TEAM CSS CARD */
 
 .sectionTeam{
@@ -1362,4 +1256,82 @@
   .landingBox button{
     top: 108vw;
   }
+ }
+ 
+ /* container */
+ @media (min-width:651px) {
+  .responsiveThreeColumnGrid {
+    display:block;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+  }
+ }
+
+.ico{
+  width: 100px;
+}
+
+/* columns */
+.responsiveThreeColumnGrid > * {
+  padding:1.5rem;
+}
+
+@media (max-width:1098px) {
+  .responsiveThreeColumnGrid > * {
+    padding-bottom: 50px;
+  }
+}
+
+/* tablet breakpoint */
+@media (min-width:1099px) {
+  .responsiveThreeColumnGrid {
+    margin: auto;
+      width: 70%;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: solid 4px black;
+      border-radius: 30px;
+      margin-bottom: 20px;
+  }
+  .ico{
+    width: 100px;
+  }
+}
+
+ /*CONCEPT SECTION*/
+ @media (max-width:650px) {
+  .conceptBox p{
+    width: 80%;
+    padding-left: 7%;
+    margin-top: 25px;
+    text-align: left;
+    font-size: 26px;
+   }
+
+   .responsiveThreeColumnGrid p{
+    display:block;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .ico{
+    width: 80px;
+  }
+}
+
+
+@media (min-width:651px) {
+  .conceptBox p{
+    width: 80%;
+    padding-left: 7%;
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 35px;
+   }
+}
+
+ .conceptBox p:last-child{
+  margin-bottom: 75px;
  }
