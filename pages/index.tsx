@@ -79,7 +79,7 @@ const Home: NextPage = () => {
             <div>
             <img className={styles.ico} src={pocketwatch.src} alt="" />
             <p>
-              2H00 &agrave; 4H00<br/>
+              2H00 &Agrave; 4H00<br/>
               D&apos;ENQU&Ecirc;TE, SELON<br/>
               VOS TALENTS<br/>
               D&apos;INVESTIGATEUR
