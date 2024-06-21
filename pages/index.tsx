@@ -34,7 +34,7 @@ const Home: NextPage = () => {
           <button 
             className={styles.landingButton}
             role="button"
-            onClick={() => router.push(`/mint`)}
+            onClick={() => router.push(`https://fr.ulule.com/l-investigateur-eternal-cthulhu/`)}
           >
             <span>
               Relevez le d&eacute;fi
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
           <button 
             className={styles.newButton}
             role="button"
-            onClick={() => router.push(`/mint`)}
+            onClick={() => router.push(`https://fr.ulule.com/l-investigateur-eternal-cthulhu/`)}
           >
           <span>
             ULULE

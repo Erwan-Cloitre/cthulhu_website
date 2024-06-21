@@ -30,7 +30,7 @@ const Navbar = () => {
       <Link href="/">
         <a onClick={showNavbar}>Home</a>
       </Link>
-      <Link href="/">
+      <Link href="https://fr.ulule.com/l-investigateur-eternal-cthulhu/">
         <a onClick={showNavbar}>Ulule</a>
       </Link>
       <Link href="/">
